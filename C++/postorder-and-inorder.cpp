@@ -1,4 +1,4 @@
-// 从一棵树先序遍历和中序遍历得到它的后序遍历的顺序 
+// 从一棵树后序遍历和中序遍历得到它的先序遍历的顺序 
 #include<iostream>
 #include<vector>
 using namespace std ; 
