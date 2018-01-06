@@ -12,3 +12,4 @@
 11. [归并排序(迭代)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/merge-sort-iteration.cpp)
 12. [基数排序(高位)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/radix-sort-high-order.cpp)
 13. [基数排序(低位)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/radix-sort-low-order.cpp)
+14. [整体交换数组的前n个元素和后m个元素](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/change-n-m.cpp) --> [它的总结](https://github.com/yuyilei/Algorithms/blob/master/md/exchange-n-m.md)
