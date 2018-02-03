@@ -13,3 +13,6 @@
 12. [基数排序(高位)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/radix-sort-high-order.cpp)
 13. [基数排序(低位)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/radix-sort-low-order.cpp)
 14. [整体交换数组的前n个元素和后m个元素](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/change-n-m.cpp) --> [它的总结](https://github.com/yuyilei/Algorithms/blob/master/md/exchange-n-m.md)
+15. [用栈解决背包问题](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/knapsack-problem-recall.cpp)
+16. [哈夫曼树](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/HuffmanTree.cpp)
+17. [并查集合并](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Union.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Connected-Component-Num.md)
