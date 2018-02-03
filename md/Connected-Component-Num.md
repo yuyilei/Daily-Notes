@@ -17,13 +17,14 @@
 demo的链接 --> [并查集的应用](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Union.cpp)
 
 合并a,b两点（其实就是合并a,b所属的连通分量为同一个连同分量 
+
 ```
 void Union(int a, int b) {                                 
     int x = root(a) ;                          // 查看a的根节点
     int y = root(b) ;                          // 查看b的根节点  
     if ( father[x] != father[y] )              // 如果两者的根节点不同，就把x的根节点设为y，意为合并两点
         father[x] = y ;  
-
+} 
 ```
 
 查找根节点，并缩短路径，缩短路径是为了降低树的高度，加快查找速度 
