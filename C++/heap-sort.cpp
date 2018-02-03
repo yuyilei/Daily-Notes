@@ -23,7 +23,7 @@ void heap_adjust(Item a[], int s, int e) {
         a[parent] = a[child] ;
         parent = child ;
         child = child*2 + 1 ;
-}
+    }
     a[parent] = tmp ;
 }
 
