@@ -16,3 +16,4 @@
 15. [用栈解决背包问题](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/knapsack-problem-recall.cpp)
 16. [哈夫曼树](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/HuffmanTree.cpp)
 17. [并查集合并](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Union.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Connected-Component-Num.md)
+18. [Dijkstra算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Dijkstra.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Dijkstra.md)
