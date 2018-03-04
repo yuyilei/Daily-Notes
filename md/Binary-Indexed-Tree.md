@@ -47,14 +47,15 @@
 可以发现: 
 
 ```
-    tree[i] = source[i-2^k+1] + source[i-2^k+2]+......source[i] ; // k为i的二进制数中，最低位的1的位数 ，如 i = 8 时，k = 3  
+    tree[i] = source[i-2^k+1] + source[i-2^k+2]+......source[i] ; 
+    // k为i的二进制数中，最低位的1的位数 ，如 i = 8 时，k = 3  
 ```
 
 引入 **lowbit(int i)** : 
 
 ```
     int lowbit(int i) {
-        return i & (-i) ;                       // 获取最低位的1   lowbit(x) = 2^k （k为x的二进制数中，最低位的1的位数)  
+        return i & (-i) ;     // 获取最低位的1   lowbit(x) = 2^k （k为x的二进制数中，最低位的1的位数)  
     }
 ```
 
@@ -76,7 +77,9 @@
     sum[i] = source[1] + source[2] + ... + source[i] ; 
 ```
 
-所以source在[left,right] 之间的和等于 ： `sum[right] - sum[left-1]` ， 由此可见，求区间和就是求source数组的前缀和。 
+所以source在[left,right] 之间的和等于 ： `sum[right] - sum[left-1]`
+
+由此可见，求区间和就是求source数组的前缀和。 
 
 以sum[7]为例：
 
@@ -120,7 +123,9 @@
 如果source数组中的某个值被修改了，要对tree进行更新： 
 
 如果source[1] 修改了， 需要更新 tree[1], tree[2], tree[4], tree[8] 
+
 如果source[2] 修改了， 需要更新 tree[2], tree[4], tree[8] 
+
 如果source[3] 修改了， 需要更新 tree[3], tree[4], tree[8] 
 
 把下标都改为为二进制： 
