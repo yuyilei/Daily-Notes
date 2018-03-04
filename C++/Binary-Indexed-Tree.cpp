@@ -20,7 +20,7 @@ class BITree {
         int res = 0 ; 
         for ( int i = right ; i >= 1 ; i -= lowbit(i) ) 
             res += tree[i] ; 
-        return 0 ; 
+        return res ; 
     }
 
     int SumSection(int left, int right) {                                 // 求和 [left,right] 
@@ -39,4 +39,14 @@ class BITree {
 
 int main() {
     // test demo .... 
+    BITree bit(100) ; 
+    int i, j, t ;
+    for ( i = 1 ; i <= 100 ; i++ ) {                // 单点更新 
+        bit.update_node(i,i) ;                      // tree[i] = i ;                        
+    }
+    printf("left = 1, right = 10, sum = %d\n",bit.SumSection(1,10)) ;             // 区间求和  
+    printf("left = 5, right = 10, sum = %d\n",bit.SumSection(5,10)) ; 
+    printf("left = 1, right = 17, sum = %d\n",bit.SumSection(1,17)) ; 
+    printf("left = 18, right = 99, sum = %d\n",bit.SumSection(18,99)) ; 
+    return 0 ; 
 }
