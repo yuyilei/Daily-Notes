@@ -1,5 +1,7 @@
 # Dijkstra算法 
 
+这是用Dijkstra+bfs写的一道pat --> [٩̋(๑˃́ꇴ˂̀๑)۶](https://github.com/yuyilei/Pat_Advanced_Level/blob/master/Advanced_Pat/1111.cpp)
+
 **最短路径** : 
 
  > 从图中的某个顶点出发到达另外一个顶点的所经过的边的权重和最小的一条路径，称为最短路径。 
