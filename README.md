@@ -19,3 +19,4 @@
 18. [Dijkstra算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Dijkstra.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Dijkstra.md)
 19. [树状数组](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Binary-Indexed-Tree.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Binary-Indexed-Tree.md)
 20. [KMP算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/KMP.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/KMP.md)
+21. [priority_queue](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/priority_queue.cpp)
