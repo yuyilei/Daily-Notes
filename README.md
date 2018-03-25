@@ -21,3 +21,4 @@
 20. [KMP算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/KMP.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/KMP.md) 还有 [improve KMP in getNext](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/improve_KMP.cpp) 
 21. [BM算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/BM.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/BM.md)
 22. [priority_queue](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/priority_queue.cpp)
+23. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
