@@ -22,3 +22,5 @@
 21. [BM算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/BM.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/BM.md)
 22. [priority_queue](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/priority_queue.cpp)
 23. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
+24. [两个长度相等的有序序列求中位数](https://github.com/yuyilei/Algorithms/blob/master/Python/median-number-in-two-segment.py) 
+25. [两个长度不等的有序序列求第K位元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-largest-in-two-sorted-segmet.py)
