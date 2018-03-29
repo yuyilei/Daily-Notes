@@ -24,3 +24,4 @@
 23. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
 24. [两个长度相等的有序序列求中位数](https://github.com/yuyilei/Algorithms/blob/master/Python/median-number-in-two-segment.py) 
 25. [两个长度不等的有序序列求第K位元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-largest-in-two-sorted-segmet.py)
+26. [无序序列中求第K小元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-smallest-in-a-segment.py)
