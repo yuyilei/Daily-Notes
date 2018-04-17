@@ -1,9 +1,11 @@
 # 一些算法的demo Ｏ(≧▽≦)Ｏ
+
+## C++ 
 1. [最大公约数（辗转相除法）的改进](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/gcd.cpp)
 2. [由中序遍历和先序遍历得到后序遍历](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/preorder-and-inorder.cpp)
 3. [由中序遍历和后序遍历得到先序遍历](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/postorder-and-inorder.cpp)
 4. [构建AVL树](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/compete-AVL-tree.cpp)
-5. [构建红黑树](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/insert-red-and-black-tree.cpp)  --> [另一个构建红黑树的demo，感觉这个比较清晰(∪´>‿<`)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/all-RBtree.cpp)  -->   [关于红黑树的总结](https://github.com/yuyilei/Algorithms/blob/master/md/RBtree.md)
+5. [构建红黑树](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/insert-red-and-black-tree.cpp)  --> [构建红黑树2](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/all-RBtree.cpp)  -->   [关于红黑树的总结](https://github.com/yuyilei/Algorithms/blob/master/md/RBtree.md)
 6. [堆排序](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/heap-sort.cpp)
 7. [计数排序](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/counting-sort.cpp)
 8. [希尔排序](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/shell-sort.cpp)
@@ -18,10 +20,15 @@
 17. [并查集合并](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Union.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Connected-Component-Num.md)
 18. [Dijkstra算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Dijkstra.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Dijkstra.md)
 19. [树状数组](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Binary-Indexed-Tree.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/Binary-Indexed-Tree.md)
-20. [KMP算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/KMP.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/KMP.md) 还有 [improve KMP in getNext](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/improve_KMP.cpp) 
+20. [KMP算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/KMP.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/KMP.md) --> [improve KMP in getNext](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/improve_KMP.cpp) 
 21. [BM算法](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/BM.cpp) --> [它的说明](https://github.com/yuyilei/Algorithms/blob/master/md/BM.md)
 22. [priority_queue](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/priority_queue.cpp)
-23. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
-24. [两个长度相等的有序序列求中位数](https://github.com/yuyilei/Algorithms/blob/master/Python/median-number-in-two-segment.py) 
-25. [两个长度不等的有序序列求第K位元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-largest-in-two-sorted-segmet.py)
-26. [无序序列中求第K小元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-smallest-in-a-segment.py)
+23. [俄式乘法(减治法)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/multi.cpp)
+24. [找硬币(减治法)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Find-Fake-coin.cpp)
+
+## Python
+1. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
+2. [两个长度相等的有序序列求中位数](https://github.com/yuyilei/Algorithms/blob/master/Python/median-number-in-two-segment.py) 
+3. [两个长度不等的有序序列求第K位元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-largest-in-two-sorted-segmet.py)
+4. [无序序列中求第K小元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-smallest-in-a-segment.py)
+5. [Extenible Hash](https://github.com/yuyilei/Algorithms/blob/master/Python/Extenible-Hash.py)
