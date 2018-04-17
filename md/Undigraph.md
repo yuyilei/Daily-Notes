@@ -2,7 +2,7 @@
 
 > 无向图：两点之间的连接没有方向。 
 
-## 数与无向图
+## 树与无向图
 
 树是一副无环完全图，一个含有V个节点，满足以下条件之一时，它就是一棵树：
 
@@ -59,11 +59,11 @@
 注意删去了点和边
 
 ```C++
-    for each in 图的全部顶点：
-        新图 = 旧图 - each
-        dfs(新图) // 判断连通
-        if 不连通：
-            each是一个所求点
+for each in 图的全部顶点：
+    新图 = 旧图 - each
+    dfs(新图) // 判断连通
+    if 不连通：
+        each是一个所求点
 ```
 
 删去边的问题同理，利用dfs判断改变之后的额图是否连通。
@@ -81,7 +81,7 @@ visited[1000] = {false} ;
 
 void ifCycle(Graph G)
     for each in G.V :
-        if !visited[each]:
+        if !visited[each]:                 // 每个点dfs
             dfs(G,each,each)
 
 void dfs(Graph G, int v, int u) 
@@ -89,7 +89,7 @@ void dfs(Graph G, int v, int u)
     for each in G.adj[v]:
         if !visited[each]:
             dfs(G,each,v)
-        else if each != u:
+        else if each != u:                // each已经被访问过，且each不是v的上一个点，说明有环。
             HasCycle = true 
 ```
 
