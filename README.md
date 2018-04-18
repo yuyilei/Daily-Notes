@@ -1,5 +1,10 @@
 # 一些算法的demo Ｏ(≧▽≦)Ｏ
 
+## md
+
+1. [无向图](https://github.com/yuyilei/Algorithms/blob/master/md/Undigraph.md)
+2. [动态规划](https://github.com/yuyilei/Algorithms/blob/master/md/dynamic_programming.md)
+
 ## C++ 
 1. [最大公约数（辗转相除法）的改进](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/gcd.cpp)
 2. [由中序遍历和先序遍历得到后序遍历](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/preorder-and-inorder.cpp)
@@ -25,6 +30,7 @@
 22. [priority_queue](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/priority_queue.cpp)
 23. [俄式乘法(减治法)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/multi.cpp)
 24. [找硬币(减治法)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Find-Fake-coin.cpp)
+25. [最长公共子序列(动态规划)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Longest_Common_Subsequence.cpp)
 
 ## Python
 1. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
