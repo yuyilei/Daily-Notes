@@ -26,7 +26,7 @@
 
 ## 动态规划实例
 
-1）[最长上升子序列](https://github.com/yuyilei/LeetCode/blob/master/C%2B%2B/300_Longest_Increasing_Subsequence.cp)
+(1）[最长上升子序列](https://github.com/yuyilei/LeetCode/blob/master/C%2B%2B/300_Longest_Increasing_Subsequence.cp)
 
-2) [最长公共子序列](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Longest_Common_Subsequence.cpp)
+(2) [最长公共子序列](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Longest_Common_Subsequence.cpp)
 
