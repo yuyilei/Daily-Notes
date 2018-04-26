@@ -31,6 +31,8 @@
 23. [俄式乘法(减治法)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/multi.cpp)
 24. [找硬币(减治法)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Find-Fake-coin.cpp)
 25. [最长公共子序列(动态规划)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Longest_Common_Subsequence.cpp)
+26. [最优二叉查找树(动态规划)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/OptimalBST.cpp)
+27. [0/1背包问题(动态规划)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/knapsack01.cpp)
 
 ## Python
 1. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
