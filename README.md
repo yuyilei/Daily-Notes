@@ -34,6 +34,8 @@
 26. [最优二叉查找树(动态规划)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/OptimalBST.cpp)
 27. [0/1背包问题(动态规划)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/knapsack01.cpp)
 28. [最近点问题(分治法)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Close_point_problem.cpp)
+29. [Kruskal算法求最小生成树(贪心)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Kruskal.cpp)
+30. [Prim算法求最小生成树(贪心)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Prim.cpp)
 
 ## Python
 1. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
