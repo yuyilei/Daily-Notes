@@ -23,7 +23,7 @@ void Union(int a, int b) {
     int x = root(a) ;                          // 查看a的根节点
     int y = root(b) ;                          // 查看b的根节点  
     if ( father[x] != father[y] )              // 如果两者的根节点不同，就把x的根节点设为y，意为合并两点
-        father[x] = y ;  
+        father[root(x)] = root(y) ;  
 } 
 ```
 
