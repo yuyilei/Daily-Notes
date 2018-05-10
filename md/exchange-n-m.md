@@ -119,13 +119,12 @@ case2:
 这就是所求结果。
 
 总体上，只遍历了整个数组2遍，所以时间复杂度为`O(num)`（num为数组长度) ，且不需辅助空间（除去遍历需要的下标**i**)。 
-> invert的开销也要计算啊 少女~~
-> 复杂度最高次项的系数不能省略~
 ## 另解
 填坑法
-1.取出`pos = key[0]`, 记录当前索引为`0`, 当前索引所对应源数组索引关系见`indexof`函数, 更换索引值为函数结果.
-2.迭代步骤1
-3.索引再次为零时, 放置`pos`.
+1. 记`m,n`最大公约数为`k`, 迭代步骤2-4`k`次
+2. 对第`i`次(从`0`开始)取出`pos = key[i]`, 记录当前索引为`i`, 当前索引所对应源数组索引关系见`indexof`函数, 更换索引值为函数结果.
+3. 迭代步骤2
+4. 索引再次为零时, 放置`pos`.
 
 代码如下: 复杂度`o(n)`,无额外开销
 
@@ -136,6 +135,16 @@ int indexof(int i, int m, int n, int t){
 	else if(i<t-m) return i-n+m;
 	else return i+m-t;
 }
+int nau(int m,int n){
+	int max = (m>n)?m:n;
+	int min = (m+n)-max;
+	int res;
+	while((res=max-min)){
+		max = (min > res)?min:res;
+		min = (min + res) - max;
+	}
+	return max;
+}
 
 int main(int argc, char const* argv[]){
 	int key[20] = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
@@ -143,13 +152,16 @@ int main(int argc, char const* argv[]){
 	printf("\n");
 	int m,n;
 	scanf("%d%d",&m,&n);
-	int pos = key[0];
-	int space = 0;
-	do{
-		int temp = indexof(space,m,n,20);
-		key[space] = (temp==0)?pos:key[temp];
-		space = temp;
-	}while(space != 0);
+	int mx = nau(m,n);
+	for(int i=0;i < mx;i++){
+		int space = i;
+	  int pos = key[space];
+	  do{
+		  int temp = indexof(space,m,n,20);
+	  	key[space] = (temp==i)?pos:key[temp];
+  		space = temp;
+  	}while(space != i);
+	}
 	for(int N = 0; N < 20; N ++) printf("%3d",key[N]); 
 	return 0;
 }
