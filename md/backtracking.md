@@ -19,6 +19,7 @@
 
 递归法回溯法搜索子集树：
 
+
 ```c
     void Backtrack(int t)
     {
@@ -33,6 +34,9 @@
             }
     }
 ```
+
+[递归法求N皇后](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/recursive-Nqueue.cpp)
+
 
 递归法回溯法搜索排列树：
 
@@ -54,6 +58,7 @@
 
 
 非递归法回溯：
+
 
 ```c
     void Backtrack() {
@@ -81,3 +86,5 @@
         }
     }
 ```
+
+[非递归求哈密顿回路](https://github.com/yuyilei/Algorithms/blob/master/C++/Hamilton.cpp)
