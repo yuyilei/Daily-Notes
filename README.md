@@ -4,6 +4,7 @@
 
 1. [无向图](https://github.com/yuyilei/Algorithms/blob/master/md/Undigraph.md)
 2. [动态规划](https://github.com/yuyilei/Algorithms/blob/master/md/dynamic_programming.md)
+3. [回溯法](https://github.com/yuyilei/Algorithms/blob/master/md/backtracking.md)
 
 ## C++ 
 1. [最大公约数（辗转相除法）的改进](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/gcd.cpp)
