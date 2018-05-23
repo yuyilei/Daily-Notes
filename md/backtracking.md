@@ -37,6 +37,7 @@
 
 [递归法求N皇后](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/recursive-Nqueue.cpp)
 
+[递归法求数独](https://github.com/yuyilei/LeetCode/blob/master/C%2B%2B/037_Sudoku_Solver.cpp)
 
 递归法回溯法搜索排列树：
 
