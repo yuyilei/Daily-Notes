@@ -7,6 +7,7 @@
 3. [回溯法](https://github.com/yuyilei/Algorithms/blob/master/md/backtracking.md)
 4. [单调栈](https://github.com/yuyilei/Algorithms/blob/master/md/monotonous-stack.md)
 5. [B树、B+树](https://github.com/yuyilei/Algorithms/blob/master/md/Btree-andB+tree.md#b树与b树的比较)
+6. [O(1)的LRU策略与Redis中LRU的实现](https://github.com/yuyilei/Algorithms/blob/master/md/LRU-cache.md)
 
 ## C++ 
 1. [最大公约数（辗转相除法）的改进](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/gcd.cpp)
