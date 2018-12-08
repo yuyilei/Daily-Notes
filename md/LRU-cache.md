@@ -16,9 +16,11 @@ LRU是Least Recently Used的缩写，即最近最少使用，常用于页面置�
 
 当一个数据到来时：
 
-1）如果是新数据，则插在链表头部；
-2）如果缓存命中，则将数据移动到链表头部；
-3）链表中的数据超出一定限额时，删除链表尾部的数据；
+1. 如果是新数据，则插在链表头部；
+
+2. 如果缓存命中，则将数据移动到链表头部；
+
+3. 链表中的数据超出一定限额时，删除链表尾部的数据；
 
 问题的关键是如何使操作的时间复杂度为O(1)。链表不能随机访问，如果要访问一个节点，要通过O(n)的遍历，所以增加一个哈希表，哈希表的键是 key，值是 key,value 组成的节点（位于链表中）。 这样，就能通过 key 以O(1)的时间复杂度随机访问这个节点。 
 
@@ -118,11 +120,12 @@ Redis Server每隔一段时间（100ms左右），调用updateLRUClock函数（�
 
 同时，每个Redis Object中也包含它自己的lruclock:
 
-```
+```c++
 typedef struct redisObject {
     ...
     unsigned lru:LRU_BITS; /* LRU time (relative to server.lruclock)*/
     ...
+};
 ```
 
 创建这个Object的时候，会初始化它的lru，之后每次访问这个Object，都会更新它的lru。这样在一段时间内（194天内），一个Object的lru越小，就表示它越久没被访问过。
@@ -170,7 +173,7 @@ Redis支持的淘汰策略比较多:
 
 实现：
 
-```
+```c++ 
         if (server.maxmemory_policy & (MAXMEMORY_FLAG_LRU|MAXMEMORY_FLAG_LFU) ||
             server.maxmemory_policy == MAXMEMORY_VOLATILE_TTL)
         {
