@@ -62,22 +62,22 @@ typedef struct pollfd {
 
 |掩码|事件|
 |--|--|
-|　  POLLIN 　　|　　　　　有数据可读 |
-|　　POLLRDNORM 　|　　　  有普通数据可读|
-|　　POLLRDBAND　　|　　　 有优先数据可读| 
-|　　POLLPRI　　　　|　　　有紧迫数据可读| 
-|　　POLLOUT　　　　|　    写数据不会导致阻塞 | 
-|　　POLLWRNORM　　 |　　  写普通数据不会导致阻塞 |
-|　　POLLWRBAND　　|　　　 写优先数据不会导致阻塞 |
-|　　POLLMSGSIGPOLL 　|　　消息可用 | 
+|POLLIN 　　|　　　　　有数据可读 |
+|POLLRDNORM 　|　　　  有普通数据可读|
+|POLLRDBAND　　|　　　 有优先数据可读| 
+|POLLPRI　　　　|　　　有紧迫数据可读| 
+|POLLOUT　　　　|　    写数据不会导致阻塞 | 
+|POLLWRNORM　　 |　　  写普通数据不会导致阻塞 |
+|POLLWRBAND　　|　　　 写优先数据不会导致阻塞 |
+|POLLMSGSIGPOLL 　|　　消息可用 | 
 
 revents域中还可能返回下列事件：
 
 |掩码|事件|
 |--|--|
-|　　POLLER　　    |  指定的文件描述符发生错误 |
-|　　POLLHUP　　   |   指定的文件描述符挂起事件 |
-|　　POLLNVAL　　  |    指定的文件描述符非法|
+|POLLER　　    |  指定的文件描述符发生错误 |
+|POLLHUP　　   |   指定的文件描述符挂起事件 |
+|POLLNVAL　　  |    指定的文件描述符非法|
 　
 
 与select相同，每次调用poll时，都需要遍历全部的文件查看是否准备好，也需要把fd的集合从用户态拷贝到内核态，但是poll的最大连接数没有限制，如果空间允许的话，可以加入文件描述符，但是过多的文件描述符还是会降低返回速度。
