@@ -205,11 +205,12 @@ struct kevent {
 EV_SET(&kev, ident, filter, flags, fflags, data, udata)
 ```
 
-1. 调用kqueue函数时，创建一个新的kqueue描述符，并返回这个描述符；创建kqueue结构体和一个指向已打开文件描述符hashtable的指针(此时还没为hashtable分配空间)； 
-2. 调用kevent函数时，遍历changelist，此时changelist中的kevents从用户空间copy到内核空间,将changelist中的每个要监控的描述符加入kqueue（调用register函数）；
-3. register函数会检查要加入的描述符是否已经在hashtable(检查hashtable时间复杂度为O(1))中，如果还没加入，分配一个新的knotes(有EV_ADD标记).根据传递来的kevent信息对新建的knotes进行初始化，之后将knote添加到kqueue的hashtable；
-4. 当changelist的所有事件都处理成功后 kqueue_scan会开始检查是否有active的事件，如果有，加入就绪的list。
 
+1. 调用kqueue函数时，创建一个新的kqueue描述符，并返回这个描述符；创建kqueue结构体和一个指向已打开文件描述符hashtable的指针(此时还没为hashtable分配空间)； 
+2. kevent向内核注册/取消注册事件和返回就绪事件或错误事件，注册/取消注册的方法是通过 kevent() 将 参数eventlist 和 nevent置成 NULL 和 0 来达到的。
+3. 注册/取消注册时，调用kevent函数，遍历changelist，此时changelist中的kevents从用户空间copy到内核空间,将changelist中的每个要监控的描述符加入kqueue（调用register函数）；
+4. register函数会检查要加入的描述符是否已经在hashtable(检查hashtable时间复杂度为O(1))中，如果还没加入，分配一个新的knotes(有EV_ADD标记).根据传递来的kevent信息对新建的knotes进行初始化，之后将knote添加到kqueue的hashtable；
+5. 当changelist的所有事件都处理成功后 kqueue_scan会开始检查是否有active的事件，如果有，加入就绪的list。
 与epoll相比，kqueue用hashtable维持要监控的描述符，检查的事件复杂度为O(1)，且kqueue一次可以加入/更新多个要监控的描述符（changelist数组）。
 
 # 总结
