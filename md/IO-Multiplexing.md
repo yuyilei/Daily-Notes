@@ -1,4 +1,4 @@
-# select、poll、epoll 
+# select、poll、epoll、kqueue
 
 I/O多路复用是指使用一个线程检查多个描述符的就绪状态，比如调用select函数，传入多个描述符，如果有一个或多个描述符准备就绪（一个或多个I/O事件发生后）就返回，否则就一直阻塞直到超时。
 
@@ -9,19 +9,19 @@ O，使用socket函数创建的socket默认都是阻塞的，这就意味着，�
 1. 输入操作
 2. 输出操作
 3. 接受连接（accept）等待对方接受连接请求，如果没有接受，线程就会进入睡眠
-4. 发起连接（connect）在收到服务端的应答前不会返回。 
+4. 发起连接（connect）在收到服务端的应答前不会返回。
 
 Linux支持I/O多路复用的系统调用有select、poll、epoll，这些调用都是内核级别的。
 
-## select 
+## select
 
 Linux提供的select相关函数接口如下：
 
 ```C
-int select(int max_fd, fd_set *readset, fd_set *writeset, fd_set *exceptset, struct timeval *timeout) ; 
+int select(int max_fd, fd_set *readset, fd_set *writeset, fd_set *exceptset, struct timeval *timeout) ;
 FD_ZERO(int fd, fd_set* fds) ;   //清空集合
 FD_SET(int fd, fd_set* fds)   ;  //将给定的描述符加入集合
-FD_ISSET(int fd, fd_set* fds)  ; //将给定的描述符从文件中删除  
+FD_ISSET(int fd, fd_set* fds)  ; //将给定的描述符从文件中删除
 FD_CLR(int fd, fd_set* fds)  ;  //判断指定描述符是否在集合中
 ```
 
@@ -36,20 +36,20 @@ select执行:
 ![](https://upload-images.jianshu.io/upload_images/4440914-4bdfa41a7bf62314.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 每次执行select函数时，要遍历全部的文件描述符来检查是否准备好，如果有很多文件描述符，效率较低，且系统设置select最多只能同时服务1024个文件描述符（可以修改，linux/posix_types.h头文件有这样的声明：`#define __FD_SETSIZE    1024`  表示select最多同时监听1024个fd）。所以，select不适合并发数大于1024的情况。
-同时，每次调用select函数，都需要把fd集合从用户态拷贝到内核态，有较大开销。 
+同时，每次调用select函数，都需要把fd集合从用户态拷贝到内核态，有较大开销。
 
-## poll 
+## poll
 
 poll的机制与select类似，管理多个描述符也是进行轮询，根据描述符的状态进行处理，但poll没有最大文件描述符数量的限制。
 
-Linux提供的poll相关函数接口如下： 
+Linux提供的poll相关函数接口如下：
 
 ```C
 int poll(struct pollfd fds[], nfds_t nfds, int timeout);
 typedef struct pollfd {
         int fd;          // 需要被检测或选择的文件描述符
         short events;     // 对文件描述符fd上感兴趣的事件
-        short revents;    // 文件描述符fd上当前实际发生的事件 
+        short revents;    // 文件描述符fd上当前实际发生的事件
 } pollfd_t;
 /*
 events中可能的事件如下：
@@ -61,7 +61,7 @@ POLLOUT　　　　　    写数据不会导致阻塞
 POLLWRNORM　　 　　  写普通数据不会导致阻塞
 POLLWRBAND　　　　　 写优先数据不会导致阻塞
 POLLMSGSIGPOLL 　　　消息可用
-  
+
 revents域中还可能返回下列事件：
 POLLER　　           指定的文件描述符发生错误
 POLLHUP　　          指定的文件描述符挂起事件
@@ -76,7 +76,7 @@ POLLNVAL　　         指定的文件描述符非法
 
 与select相同，每次调用poll时，都需要遍历全部的文件查看是否准备好，也需要把fd的集合从用户态拷贝到内核态，但是poll的最大连接数没有限制，如果空间允许的话，可以加入文件描述符，但是过多的文件描述符还是会降低返回速度。
 
-## epoll 
+## epoll
 
 epoll是Linux中基于事件驱动的I/O多路复用。相对于select和poll来说，epoll没有描述符个数限制，使用一个描述符管理多个描述符，调用时不用遍历全部文件描述符。
 
@@ -97,7 +97,7 @@ int epoll_wait(int epfd, struct epoll_event * events, int maxevents, int timeout
      - EPOLL_CTL_MOD 修改已注册的fd的监听事件
      - EPOLL_CTL_DEL 从epfd中删除一个fd
    + fd: 要监听的文件描述符
-   + event: 表示要监听的事件，结构如下 
+   + event: 表示要监听的事件，结构如下
 
 ```C
 struct epoll_event {
@@ -128,7 +128,7 @@ EPOLLONESHOT：只监听一次事件，当监听完这次事件之后，如果�
     + events: 就绪的事件的集合
     + maxevents: 最多event的数目
     + timeout: 等待的超时时间
-    
+
 epoll对文件描述符的操作有两种模式：LT（level trigger，水平触发）和ET（edge trigger，边缘触发）。
 
 1. 水平触发：默认工作模式，即当epoll_wait检测到某描述符事件就绪并通知应用程序时，应用程序可以不立即处理该事件；下次调用epoll_wait时，会再次通知此事件。
@@ -137,7 +137,7 @@ epoll对文件描述符的操作有两种模式：LT（level trigger，水平触
 
 ### epoll实现
 
-epoll在Linux内核中申请一个简易的文件系统，用这个文件系统来存储要监控的事件（文件系统一般是什么结构？树！） 
+epoll在Linux内核中申请一个简易的文件系统，用这个文件系统来存储要监控的事件（文件系统一般是什么结构？树！）
 
 1. 当某一进程调用epoll_create方法时，Linux内核会创建一个eventpoll结构体，eventpoll结构体如下所示：
 
@@ -173,21 +173,53 @@ struct epitem{
 调用epoll的三个函数，实际上发生了：
 
 1. epoll_create: 创建一个eventpoll结构体；返回一个句柄，之后所有的使用都依靠这个句柄来标识。
-2. epoll_ctl: 向epoll对象中添加、删除、修改感兴趣的事件，返回0标识成功，返回-1表示失败。(插入，删除，修改红黑树) 
+2. epoll_ctl: 向epoll对象中添加、删除、修改感兴趣的事件，返回0标识成功，返回-1表示失败。(插入，删除，修改红黑树)
 3. epoll_wait: 收集收集在epoll监控中已经发生的事件。（返回双向链表中的元素）
 
 epoll适用于总连接数大，但是任意时刻只有少量的活跃的连接（就绪的fd）的情况。
 
+## kqueue
+
+kqueue与epoll相似，是Unix的系统调用。
+
+kqueue将要监控的描述符及其事件等参数封装为knote。
+
+数据结构：
+1. 一个list，用于保存就绪的knote的节点，描述符对应的事件就绪时，该描述符对应的knote被加入list；
+2. 一个hashtable，用于检查kote是否已经被注册监控；
+3. 一个线性的描述符的array，和进程打开的文件描述符表一致。用于保证kqueue中的knote与用户描述符的一致性，如当用户关闭一个描述符如时, kqueue对应的knotes 节点会别释放。
+
+接口如下：
+
+```C
+int kqueue(void);
+int kevent(int kq, const struct kevent *changelist, int nchanges, struct kevent *eventlist, int nevents, const struct timespec *timeout); 
+struct kevent {
+     uintptr_t       ident;          // 事件标识 
+     int16_t         filter;         // 事件过滤器 
+     uint16_t        flags;          // 通用标记 
+     uint32_t        fflags;         // 特定过滤器标记 
+     intptr_t        data;           // 特定过滤器数据 
+     void            *udata;         // 用户数据标识 
+ };
+EV_SET(&kev, ident, filter, flags, fflags, data, udata)
+```
+
+1. 调用kqueue函数时，创建一个新的kqueue描述符，并返回这个描述符；创建kqueue结构体和一个指向已打开文件描述符hashtable的指针(此时还没为hashtable分配空间)； 
+2. 调用kevent函数时，遍历changelist，此时changelist中的kevents从用户空间copy到内核空间,将changelist中的每个要监控的描述符加入kqueue（调用register函数）；
+3. register函数会检查要加入的描述符是否已经在hashtable(检查hashtable时间复杂度为O(1))中，如果还没加入，分配一个新的knotes(有EV_ADD标记).根据传递来的kevent信息对新建的knotes进行初始化，之后将knote添加到kqueue的hashtable；
+4. 当changelist的所有事件都处理成功后 kqueue_scan会开始检查是否有active的事件，如果有，加入就绪的list。
+
+与epoll相比，kqueue用hashtable维持要监控的描述符，检查的事件复杂度为O(1)，且kqueue一次可以加入/更新多个要监控的描述符（changelist数组）。
+
 # 总结
 
 
-|区别|select|poll| epoll| 
+|区别|select|poll| epoll| kqueue
 |--|--|--|--|
-|操作方式|遍历|遍历|回调|
-|数据结构|数组|链表|红黑树+链表|
-|效率|每次调用都线性遍历，时间复杂度为O(n)|每次调用都线性遍历，时间复杂度为O(n)|事件驱动，当fd就绪，系统注册的回调函数就会被调用，将就绪fd放到链表中，时间复杂度O(1)|
-|最大连接数|1024|无上限|无上限|
-|fd拷贝|每次调用，都需要把fd集合从用户态拷贝到内核态|每次调用，都需要把fd集合从用户态拷贝到内核态|调用epoll_ctl时拷贝fd进内核并保存，epoll_wait不拷贝|
-
-
+|操作方式|遍历|遍历|回调| 回调
+|数据结构|数组|链表|红黑树+链表| 哈希表+链表
+|效率|每次调用都线性遍历，时间复杂度为O(n)|每次调用都线性遍历，时间复杂度为O(n)|事件驱动，当fd就绪，系统注册的回调函数就会被调用，将就绪fd放到链表中，时间复杂度O(1)|事件驱动，当fd就绪，系统注册的回调函数就会被调用，将就绪fd放到链表中，时间复杂度O(1)
+|最大连接数|1024|无上限|无上限|无上限
+|fd拷贝|每次调用，都需要把fd集合从用户态拷贝到内核态|每次调用，都需要把fd集合从用户态拷贝到内核态|调用epoll_ctl时拷贝fd进内核并保存，epoll_wait不拷贝|调用kqueue时将changelist中的fd拷贝进内核| 
 
