@@ -1,8 +1,10 @@
 # select、poll、epoll 
 
-I/O多路复用是指使用一个线程检查多个描述符的就绪状态，比如调用select函数，传入多个描述符，如果有一个或多个描述符准备就绪（一个或多个I／O事件发生后）就返回，否则就一直阻塞直到超时。
+I/O多路复用是指使用一个线程检查多个描述符的就绪状态，比如调用select函数，传入多个描述符，如果有一个或多个描述符准备就绪（一个或多个I/O事件发生后）就返回，否则就一直阻塞直到超时。
 
-Linux中基于socket的通信本质就是一种I／O，使用socket函数创建的socket默认都是阻塞的，这就意味着，当socket API调用不能立即完成时，线程一直处于等待状态，直到操作完成得到结果或者操作超时出错。会引起阻塞的socket API有4中：
+Linux中基于socket的通信本质就是一种I
+
+O，使用socket函数创建的socket默认都是阻塞的，这就意味着，当socket API调用不能立即完成时，线程一直处于等待状态，直到操作完成得到结果或者操作超时出错。会引起阻塞的socket API有4中：
 
 1. 输入操作
 2. 输出操作
@@ -58,23 +60,27 @@ typedef struct pollfd {
 
 可能事件如下：
 
-　　POLLIN 　　　　　　　有数据可读
-　　POLLRDNORM 　　　　  有普通数据可读
-　　POLLRDBAND　　　　　 有优先数据可读
-　　POLLPRI　　　　　　　有紧迫数据可读
-　　POLLOUT　　　　　    写数据不会导致阻塞
-　　POLLWRNORM　　 　　  写普通数据不会导致阻塞
-　　POLLWRBAND　　　　　 写优先数据不会导致阻塞
-　　POLLMSGSIGPOLL 　　　消息可用
+|掩码|事件|
+|--|--|
+|　  POLLIN 　　|　　　　　有数据可读 |
+|　　POLLRDNORM 　|　　　  有普通数据可读|
+|　　POLLRDBAND　　|　　　 有优先数据可读| 
+|　　POLLPRI　　　　|　　　有紧迫数据可读| 
+|　　POLLOUT　　　　|　    写数据不会导致阻塞 | 
+|　　POLLWRNORM　　 |　　  写普通数据不会导致阻塞 |
+|　　POLLWRBAND　　|　　　 写优先数据不会导致阻塞 |
+|　　POLLMSGSIGPOLL 　|　　消息可用 | 
 
 revents域中还可能返回下列事件：
 
-　　POLLER　　           指定的文件描述符发生错误
-　　POLLHUP　　          指定的文件描述符挂起事件
-　　POLLNVAL　　         指定的文件描述符非法
+|掩码|事件|
+|--|--|
+|　　POLLER　　    |  指定的文件描述符发生错误 |
+|　　POLLHUP　　   |   指定的文件描述符挂起事件 |
+|　　POLLNVAL　　  |    指定的文件描述符非法|
 　
-　
-于select相同，每次调用poll时，都需要遍历全部的文件查看是否准备好，也需要把fd的集合从用户态拷贝到内核态，但是poll的最大连接数没有限制，如果空间允许的话，可以加入文件描述符，但是过多的文件描述符还是会降低返回速度。
+
+与select相同，每次调用poll时，都需要遍历全部的文件查看是否准备好，也需要把fd的集合从用户态拷贝到内核态，但是poll的最大连接数没有限制，如果空间允许的话，可以加入文件描述符，但是过多的文件描述符还是会降低返回速度。
 
 ## epoll 
 
@@ -99,7 +105,7 @@ int epoll_wait(int epfd, struct epoll_event * events, int maxevents, int timeout
    + fd: 要监听的文件描述符
    + event: 表示要监听的事件，结构如下 
 
-```
+```C
 struct epoll_event {
     __uint32_t events;  /* Epoll events */
     epoll_data_t data;  /* User data variable */
@@ -141,8 +147,7 @@ epoll在Linux内核中申请一个简易的文件系统，用这个文件系统�
 
 1. 当某一进程调用epoll_create方法时，Linux内核会创建一个eventpoll结构体，eventpoll结构体如下所示：
 
-```
-
+```C
 struct eventpoll{
     ....
     struct rb_root  rbr; // 红黑树的根节点，这颗树中存储着所有添加到epoll中的需要监控的事件
@@ -157,7 +162,7 @@ struct eventpoll{
 
 在epoll中，对于每一个事件，都会建立一个epitem结构体，如下所示：
 
-```
+```C
 struct epitem{
     struct rb_node  rbn;         //红黑树节点
     struct list_head    rdllink; //双向链表节点
@@ -188,7 +193,7 @@ epoll适用于总连接数大，但是任意时刻只有少量的活跃的连接
 |数据结构|数组|链表|红黑树+链表|
 |效率|每次调用都线性遍历，时间复杂度为O(n)|每次调用都线性遍历，时间复杂度为O(n)|事件驱动，当fd就绪，系统注册的回调函数就会被调用，将就绪fd放到链表中，时间复杂度O(1)|
 |最大连接数|1024|无上限|无上限|
-|fd拷贝|每次调用，都需要把fd集合从用户态拷贝到内核态|每次调用，都需要把fd集合从用户态拷贝到内核态|调用epoll_ctl时拷贝进内核并保存，epoll_wait不拷贝|
+|fd拷贝|每次调用，都需要把fd集合从用户态拷贝到内核态|每次调用，都需要把fd集合从用户态拷贝到内核态|调用epoll_ctl时拷贝fd进内核并保存，epoll_wait不拷贝|
 
 
 
