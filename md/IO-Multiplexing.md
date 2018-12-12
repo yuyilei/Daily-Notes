@@ -51,34 +51,28 @@ typedef struct pollfd {
         short events;     // 对文件描述符fd上感兴趣的事件
         short revents;    // 文件描述符fd上当前实际发生的事件 
 } pollfd_t;
+/*
+events中可能的事件如下：
+POLLIN 　　　　　　　有数据可读
+POLLRDNORM 　　　　  有普通数据可读
+POLLRDBAND　　　　　 有优先数据可读
+POLLPRI　　　　　　　有紧迫数据可读
+POLLOUT　　　　　    写数据不会导致阻塞
+POLLWRNORM　　 　　  写普通数据不会导致阻塞
+POLLWRBAND　　　　　 写优先数据不会导致阻塞
+POLLMSGSIGPOLL 　　　消息可用
+  
+revents域中还可能返回下列事件：
+POLLER　　           指定的文件描述符发生错误
+POLLHUP　　          指定的文件描述符挂起事件
+POLLNVAL　　         指定的文件描述符非法
+*/
 ```
 
 1. poll函数的返回值是就绪描述符的数目，超时时返回0，出错返回-1。
 2. fds是一个struct pollfd类型的数组，用于存放需要检测其状态的socket描述符。
 3. timeout是调用poll函数阻塞的超时时间，单位毫秒，超过timeout时，无论I/O是否准备好，poll都会返回。timeout指定为负数值表示无限超时，使poll()一直挂起直到一个指定事件发生；timeout为0指示poll调用立即返回并列出准备好I/O的文件描述符，但并不等待其它的事件。
 4. pollfd的events域是监视该文件描述符的事件掩码，由用户来设置这个域，pollfd的revents域是文件描述符的操作结果事件掩码，内核在调用返回时设置这个域。events域中请求的任何事件都可能在revents域中返回。
-
-可能事件如下：
-
-|掩码|事件|
-|--|--|
-|POLLIN 　　|　　　　　有数据可读 |
-|POLLRDNORM 　|　　　  有普通数据可读|
-|POLLRDBAND　　|　　　 有优先数据可读| 
-|POLLPRI　　　　|　　　有紧迫数据可读| 
-|POLLOUT　　　　|　    写数据不会导致阻塞 | 
-|POLLWRNORM　　 |　　  写普通数据不会导致阻塞 |
-|POLLWRBAND　　|　　　 写优先数据不会导致阻塞 |
-|POLLMSGSIGPOLL 　|　　消息可用 | 
-
-revents域中还可能返回下列事件：
-
-|掩码|事件|
-|--|--|
-|POLLER　　    |  指定的文件描述符发生错误 |
-|POLLHUP　　   |   指定的文件描述符挂起事件 |
-|POLLNVAL　　  |    指定的文件描述符非法|
-　
 
 与select相同，每次调用poll时，都需要遍历全部的文件查看是否准备好，也需要把fd的集合从用户态拷贝到内核态，但是poll的最大连接数没有限制，如果空间允许的话，可以加入文件描述符，但是过多的文件描述符还是会降低返回速度。
 
