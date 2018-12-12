@@ -9,19 +9,19 @@ Redis将select、epoll、evport的kqueue封装为不同的子模块，提供给�
 接口：
 
 ```C
-static int  aeApiCreate(aeEventLoop *eventLoop)  
-static int  aeApiResize(aeEventLoop *eventLoop, int setsize)
-static void aeApiFree(aeEventLoop *eventLoop)
-static int  aeApiAddEvent(aeEventLoop *eventLoop, int fd, int mask)
-static void aeApiDelEvent(aeEventLoop *eventLoop, int fd, int mask)
-static int  aeApiPoll(aeEventLoop *eventLoop, struct timeval *tvp)
+static int  aeApiCreate(aeEventLoop *eventLoop);
+static int  aeApiResize(aeEventLoop *eventLoop, int setsize);
+static void aeApiFree(aeEventLoop *eventLoop);
+static int  aeApiAddEvent(aeEventLoop *eventLoop, int fd, int mask);
+static void aeApiDelEvent(aeEventLoop *eventLoop, int fd, int mask);
+static int  aeApiPoll(aeEventLoop *eventLoop, struct timeval *tvp);
 ```
 
 在每一个子模块内部通过aeApiState 来存储需要的上下文信息：
  
 select中：
 
-```
+```C
 typedef struct aeApiState {
     fd_set rfds, wfds;
     /* We need to have a copy of the fd sets as it's not safe to reuse
