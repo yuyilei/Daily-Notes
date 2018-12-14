@@ -44,6 +44,7 @@
 30. [Prim算法求最小生成树(贪心)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/Prim.cpp)
 31. [N皇后问题(递归，回溯)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/recursive-Nqueue.cpp)
 32. [哈密顿回路(回溯)](https://github.com/yuyilei/Algorithms/blob/master/C++/Hamilton.cpp)
+33. [最少的硬币](https://github.com/yuyilei/Daily-Notes/blob/master/C%2B%2B/MinimumCoin.cpp)
 
 ## Python
 1. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
