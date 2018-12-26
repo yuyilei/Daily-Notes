@@ -10,7 +10,7 @@
 6. [O(1)的LRU策略与Redis中LRU的实现](https://github.com/yuyilei/Algorithms/blob/master/md/LRU-cache.md)
 7. [redis中的I/O多路复用](https://github.com/yuyilei/Algorithms/blob/master/md/redis-IO-Multiplexing.md)
 8. [select、poll、epoll、kqueue](https://github.com/yuyilei/Algorithms/blob/master/md/IO-Multiplexing.md)
-9. [redis持久化RDB、AOF](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-persistence.md) 
+9. [redis持久化RDB、AOF](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-persistence.md) 
 
 ## C++ 
 1. [最大公约数（辗转相除法）的改进](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/gcd.cpp)
