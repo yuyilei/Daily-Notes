@@ -288,7 +288,7 @@ sadd student "s3"
 sadd student "s1" "s2" "s3" 
 ```
 
-执行 BGREWRITEAOF 命令时():
+执行 BGREWRITEAOF 命令时:
 ```C
 void bgrewriteaofCommand(client *c) {
     // 正在执行BGREWRITEAOF命令，报错
