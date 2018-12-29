@@ -44,7 +44,7 @@ typedef struct dictEntry {
         int64_t s64;      // 有符号整形
         double d;         // 浮点型 
     } v;
-    struct dictEntry *next;   // 只想下一个节点的指针 
+    struct dictEntry *next;   // 指向下一个节点的指针 
 } dictEntry;
 ```
 
@@ -235,7 +235,7 @@ static long _dictKeyIndex(dict *d, const void *key, uint64_t hash, dictEntry **e
 
 ```
 
-渐进式的 rehash 避免了集中式rehash带来的庞大计算量和内存操作，但是需要注意的是redis在进行rehash的时候，正常的访问请求可能需要做多要访问两次hashtable（ht[0]， ht[1]），例如键值被rehash到新ht[1]，则需要先访问ht[0]，如果ht[0]中找不到，则去ht[1]中找。
+渐进式的 rehash 避免了集中式rehash带来的庞大计算量和内存操作，但是需要注意的是redis在进行rehash的时候，正常的访问请求可能需要做多要访问两次hashtable（ht[0]， ht[1]），例如键值被rehash到新ht[1]，则需要先访问ht[0]，如果ht[0]中找不到，再去ht[1]中找。
  
 
 
