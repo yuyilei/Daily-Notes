@@ -13,7 +13,8 @@
 9. [redis持久化RDB、AOF](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-persistence.md) 
 10. [Copy on Write(写时复制)](https://github.com/yuyilei/Daily-Notes/blob/master/md/copy-on-write.md)
 
-## C++ 
+## Algorithms 
+
 1. [最大公约数（辗转相除法）的改进](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/gcd.cpp)
 2. [由中序遍历和先序遍历得到后序遍历](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/preorder-and-inorder.cpp)
 3. [由中序遍历和后序遍历得到先序遍历](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/postorder-and-inorder.cpp)
@@ -47,10 +48,8 @@
 31. [N皇后问题(递归，回溯)](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/recursive-Nqueue.cpp)
 32. [哈密顿回路(回溯)](https://github.com/yuyilei/Algorithms/blob/master/C++/Hamilton.cpp)
 33. [最少的硬币](https://github.com/yuyilei/Daily-Notes/blob/master/C%2B%2B/MinimumCoin.cpp)
-
-## Python
-1. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
-2. [两个长度相等的有序序列求中位数](https://github.com/yuyilei/Algorithms/blob/master/Python/median-number-in-two-segment.py) 
-3. [两个长度不等的有序序列求第K位元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-largest-in-two-sorted-segmet.py)
-4. [无序序列中求第K小元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-smallest-in-a-segment.py)
-5. [Extenible Hash](https://github.com/yuyilei/Algorithms/blob/master/Python/Extenible-Hash.py)
+34. [分治法,动态规划求最大子段和](https://github.com/yuyilei/Algorithms/blob/master/Python/sum-of-largest-sub-segment.py)
+35. [两个长度相等的有序序列求中位数](https://github.com/yuyilei/Algorithms/blob/master/Python/median-number-in-two-segment.py) 
+36. [两个长度不等的有序序列求第K位元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-largest-in-two-sorted-segmet.py)
+37. [无序序列中求第K小元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-smallest-in-a-segment.py)
+38. [Extenible Hash](https://github.com/yuyilei/Algorithms/blob/master/Python/Extenible-Hash.py)
