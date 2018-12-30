@@ -8,6 +8,7 @@ struct Node {
     int key; 
     int value;
     int level; 
+    // 每层上的后继节点 
     struct Node **next; 
 }; 
 
