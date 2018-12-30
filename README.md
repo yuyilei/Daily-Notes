@@ -12,6 +12,7 @@
 8. [select、poll、epoll、kqueue](https://github.com/yuyilei/Algorithms/blob/master/md/IO-Multiplexing.md)
 9. [redis持久化RDB、AOF](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-persistence.md) 
 10. [Copy on Write(写时复制)](https://github.com/yuyilei/Daily-Notes/blob/master/md/copy-on-write.md)
+11. [redis dict rehash](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-dict-rehash.md)
 
 ## Algorithms 
 
