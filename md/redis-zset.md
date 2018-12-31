@@ -151,6 +151,21 @@ zskiplistNode *zslInsert(zskiplist *zsl, double score, sds ele) {
 }
 ```
 
+其中，随机生成的层数由特殊要求，希望生成的概率与所在层数有关，越底层概率越大，如 50% 的 Level1，25% 的 Level2，12.5% 的 Level3：
+
+```C++
+/* Returns a random level for the new skiplist node we are going to create.
+ * The return value of this function is between 1 and ZSKIPLIST_MAXLEVEL
+ * (both inclusive), with a powerlaw-alike distribution where higher
+ * levels are less likely to be returned. */
+int zslRandomLevel(void) {
+    int level = 1;
+    while ((random()&0xFFFF) < (ZSKIPLIST_P * 0xFFFF))
+        level += 1;
+    return (level<ZSKIPLIST_MAXLEVEL) ? level : ZSKIPLIST_MAXLEVEL;
+}
+```
+
 删除单个节点：
 
 
