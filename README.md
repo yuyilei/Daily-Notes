@@ -14,6 +14,7 @@
 10. [Copy on Write(写时复制)](https://github.com/yuyilei/Daily-Notes/blob/master/md/copy-on-write.md)
 11. [redis dict rehash](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-dict-rehash.md)
 12. [redis zset skiplist](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-zset.md) 
+13. [redis pipeline、transaction](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-pipeline-and-transaction.md)
 
 ## Algorithms 
 
