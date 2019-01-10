@@ -15,7 +15,7 @@
 11. [redis dict rehash](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-dict-rehash.md)
 12. [redis zset skiplist](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-zset.md) 
 13. [redis pipeline、transaction](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-pipeline-and-transaction.md)
-14. [Expiration Policy](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-expired.md) 
+14. [redis expiration policy](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-expired.md) 
 
 
 ## Algorithms 
