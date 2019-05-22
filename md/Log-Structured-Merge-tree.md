@@ -18,7 +18,7 @@ memtable驻留在内存中，Level0到Levelk存在磁盘上，每一层都由SST
 
 3. immutable memtable，内存中，memtable达到容量的上限后，变为immutable memtable，不可再写入，同时产生新的memtable。
 
-4. SSTable(Sorted String Table)，磁盘中，组成Level0到Levelk的多层结构，每层由若干个SSTable组成。Level0的SSTable由immutable memtable 直接dump得到。SSTable文件内的数据是有序的。高层Level的SSTable由低一层的Level的SSTable和本层的SSTable**归并**产生(归并排序中的归并过程)。 新的的SSTable在归并过程中通过**顺序写**生成，生成后不再改变，只可能后续的归并中被删除。 
+4. SSTable(Sorted String Table)，磁盘中，组成Level0到Levelk的多层结构，每层由若干个SSTable组成。Level0的SSTable由immutable memtable 直接dump得到。SSTable文件内的数据是有序的。高层Level的SSTable由低一层的Level的SSTable和本层的SSTable**归并**产生(归并排序中的归并过程)。 新的的SSTable在归并过程中通过**顺序写**生成，生成后不再改变，只可能后续的归并中被删除。 
 
 SSTable的结构如下：
 
