@@ -20,6 +20,7 @@
 12. [redis zset skiplist](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-zset.md) 
 13. [redis pipeline、transaction](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-pipeline-and-transaction.md)
 14. [redis expiration policy](https://github.com/yuyilei/Daily-Notes/blob/master/md/redis-expired.md) 
+15. [HTTPS加密](https://github.com/yuyilei/Daily-Notes/blob/master/md/HTTPS.md)
 
 
 ## Algorithms 
