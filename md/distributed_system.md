@@ -61,18 +61,77 @@ CAP原则又称CAP定理，指的是在一个分布式系统中，Consistency（
 要高可用并允许分区，则需放弃一致性。一旦分区发生，节点之间可能会失去联系，为了高可用，每个节点只能用本地数据提供服务，而这样会导致全局数据的不一致性。现在众多的NoSQL都属于此类。
 
 
-### mapreduce -- 分布式运算模型
+### MapReduce -- 分布式运算模型
 
 
-[MapReduce]()
+MapReduce是一种编程模型，用于大规模数据集的分布式运算。 
+
+MapReduce分为两部分：Map和Reduce。集群中机器（worker）分为三种：Master，Mapper，和Reducer。Master负责调度Mapper和Reducer。
+
+1）用户输入文件（提交作业）。MapReduce将用户输入的文件分成M份。
+
+2）Master负责分配map task和reduce task到空闲的Mapper和Reducer上。
+
+3）被分配map task的Mapper会读入用户输入的文件(已被split为M份)。Mapper的工作是对文件的内容调用用户定义的map()函数，会产生大量的中间的key/value对，并存储在内存中。
+
+4）内存中存储的key/value对会被周期性地写到磁盘上，并被分割为R个区域。这些key/value对在磁盘上的位置会返回到Master上，再由Master分配到Reducer上。
+
+5）一个worker被Master分配reduce task之后成为Reducer。Reducer会使用远程的进程调用读取Mapper磁盘上的key/value对的中间文件。Reducer会对读取到的中间文件中的key/value对进行排序（根据key进行排序），这样，拥有一样的key的key/value会被规约到一起。
+
+6）Reducer遍历排序后的中间文件，对于每一个唯一的key和它们的value的集合调用用户定义的reduce()函数，产生的输出被写入到最终输出文件中。
+
+7）所有的Mapper和Reducer都完成工作之后，就表示计算完成了，Master将程序执行权返回给用户。
+
+在整个过程中，用户只需要提供一个map()函数和一个reduce()，其余的交给Master去调度即可。
 
 
 ![](https://upload-images.jianshu.io/upload_images/4440914-5e54669407edcb40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
 
 
-### raft -- 分布式一致性算法
+![](https://upload-images.jianshu.io/upload_images/4440914-7260aa08a1424a29.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-[raft动画](http://thesecretlivesofdata.com/raft/?utm_source=hacpai.com)
+核心： 
+
+1. map处理逻辑——对传进来的一行数据如何处理？输出什么信息？
+
+2. reduce处理逻辑——对传进来的map处理结果如何处理？输出什么信息？
+
+
+[MapReduce](https://github.com/yuyilei/MIT-6.824/blob/master/notes/MapReduce.md) 
+
+
+
+### Raft -- 分布式一致性算法
+
+Raft 是一种为了管理复制日志的一致性算法。 所谓一致性，就是多个节点对某个事情达成一致的看法，即使是在部分节点故障、网络延时、网络分割的情况下。
+
+
+在Raft中，任何时候一个服务器可以扮演下面角色之一：
+
+Leader：负责接收客户端的请求，将日志复制到其他节点并告知其他节点何时应用这些日志是安全的；
+
+Candidate：用于选举Leader的一种角色；
+
+Follower：负责响应来自Leader或者Candidate的请求，完全被动，不会主动发起请求。
+
+开始时，所有的服务器都是follower，等待leader请求，在一段时间内没有收到请求，它就认定leader宕机了，自己变为candidate，开启一次选举，给自己投票，并向其他服务器发起选举请求，如果它获得了大部分服务器的选票，它就变为一个leader。
+
+选举出一个leader之后，leader负责管理复制日志来实现一致性。leader从客户端接收日志条目，把日志条目复制到其他服务器上，并且当保证安全性的时候告诉其他的服务器应用日志条目到他们的状态机中（将日志应用到状态机就是执行日志所对应的操作）。
+
+流程如下：
+
+1. client向leader发送请求，如（set V = 3），此时leader接收到数据是是uncommitted状态；
+
+2. leader给所有follower发送请求，将数据（set V = 3）复制到follower上，leader等待follower的接收响应；
+
+3. leader收到超过超过半数的接收响应后，leader返回一个ACK给client，确认数据已接收；
+
+4. client收到leader的ACK之后，表明此数据是已提交（committed）状态，leader再向follower发通知告知该 数据状态已提交，此时follower就可以应用日志条目到他们的状态机。
+
+
+[Raft动画](http://thesecretlivesofdata.com/raft/?utm_source=hacpai.com)
+
+
 
 
 
