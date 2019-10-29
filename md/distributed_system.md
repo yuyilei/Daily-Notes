@@ -10,7 +10,7 @@
 
 而分布式结构就是将一个完整的系统，按照业务功能，拆分成一个个独立的子系统，在分布式结构中，每个子系统就被称为“子服务”。这些子系统能够独立运行在web容器中，它们之间又能进行通信。这样做的好处很多，可以降低系统的耦合性（每个子系统独立进行开发、测试和部署）、业务的服务易于拓展。但同时，分布式系统多节点协作、各节点拓扑结构，会引入很多单机系统没有的问题，为了解决这些问题又会引入更多的机制、协议，带来更多的问题。
 
-![](图)
+![](https://upload-images.jianshu.io/upload_images/4440914-47906d7c5db0041f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 为什么要有分布式系统：
 
@@ -58,10 +58,14 @@ CAP原则又称CAP定理，指的是在一个分布式系统中，Consistency（
 
 ### mapreduce -- 分布式运算模型
 
-[MapReduce](https://github.com/yuyilei/MIT-6.824/blob/master/notes/MapReduce.md)
+[MapReduce](https://upload-images.jianshu.io/upload_images/4440914-5e54669407edcb40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
 ![](图)  
+
+### raft -- 分布式一致性算法
+
+[raft动画](http://thesecretlivesofdata.com/raft/?utm_source=hacpai.com)
 
 
 
