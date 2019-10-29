@@ -10,7 +10,9 @@
 
 而分布式结构就是将一个完整的系统，按照业务功能，拆分成一个个独立的子系统，在分布式结构中，每个子系统就被称为“子服务”。这些子系统能够独立运行在web容器中，它们之间又能进行通信。这样做的好处很多，可以降低系统的耦合性（每个子系统独立进行开发、测试和部署）、业务的服务易于拓展。但同时，分布式系统多节点协作、各节点拓扑结构，会引入很多单机系统没有的问题，为了解决这些问题又会引入更多的机制、协议，带来更多的问题。
 
+
 ![](https://upload-images.jianshu.io/upload_images/4440914-47906d7c5db0041f.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 
 为什么要有分布式系统：
 
@@ -36,11 +38,13 @@
 
 CAP原则又称CAP定理，指的是在一个分布式系统中，Consistency（一致性）、 Availability（可用性）、Partition tolerance（分区容错性）这三个基本需求，最多只能同时满足其中的2个。 
 
-|--|--|--| 
+
+|--|--| 
 |选项|描述|
 |Consistency（一致性）|指数据在多个副本之间能够保持一致的特性（严格的一致性）| 
 |Availability（可用性）|指系统提供的服务必须一直处于可用的状态，每次请求都能获取到非错的响应（不保证获取的数据为最新数据）|
 |Partition tolerance（分区容错性）|分布式系统在遇到任何网络分区故障的时候，仍然能够对外提供服务，除非整个网络环境都发生了故障| 
+
 
 
 **CA without P**
@@ -58,10 +62,12 @@ CAP原则又称CAP定理，指的是在一个分布式系统中，Consistency（
 
 ### mapreduce -- 分布式运算模型
 
-[MapReduce](https://upload-images.jianshu.io/upload_images/4440914-5e54669407edcb40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+[MapReduce]()
 
 
-![](图)  
+![](https://upload-images.jianshu.io/upload_images/4440914-5e54669407edcb40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)  
+
 
 ### raft -- 分布式一致性算法
 
