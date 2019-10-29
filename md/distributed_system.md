@@ -118,6 +118,10 @@ Follower：负责响应来自Leader或者Candidate的请求，完全被动，不
 
 选举出一个leader之后，leader负责管理复制日志来实现一致性。leader从客户端接收日志条目，把日志条目复制到其他服务器上，并且当保证安全性的时候告诉其他的服务器应用日志条目到他们的状态机中（将日志应用到状态机就是执行日志所对应的操作）。
 
+![](https://upload-images.jianshu.io/upload_images/4440914-b40fe47d0f8118a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+
+
+
 流程如下：
 
 1. client向leader发送请求，如（set V = 3），此时leader接收到数据是是uncommitted状态；
@@ -127,6 +131,54 @@ Follower：负责响应来自Leader或者Candidate的请求，完全被动，不
 3. leader收到超过超过半数的接收响应后，leader返回一个ACK给client，确认数据已接收；
 
 4. client收到leader的ACK之后，表明此数据是已提交（committed）状态，leader再向follower发通知告知该 数据状态已提交，此时follower就可以应用日志条目到他们的状态机。
+
+
+![](https://upload-images.jianshu.io/upload_images/4440914-2185e8c2d609b468.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240) 
+
+
+状态的伪代码：
+
+```python
+while true：
+    if state is follwer:  
+        初始化超时时间；
+        while true：
+            if 接收到投票请求 and 成功投票:
+                重置超时时间
+            elif 接收到heartbeat and leader的任期大于自己：
+                重置超时时间
+            elif 接收到AppendEntry and leader的任期大于自己：
+                重置超时时间 
+            elif 超时：
+                become a candidate 
+                break 
+        
+    if state is candidate:
+        构造requestVote请求 
+        给自己投票
+        初始化投票超时时间 
+        对其他server广播投票请求
+        while true:
+            if 接收到heartbeat and leader的任期大于自己：
+                become a follower 
+                break
+            if 接收到AppendEntry and leader的任期大于自己：
+                become a follower 
+                break 
+            if 选举成功：
+                become a leader 
+                break
+            if 选举失败(超时)：
+                下一轮选举
+                
+    if state is leader:
+        while state is leader:
+            对其他server发送heartbeat或者appendentry
+            sleep(一段时间) 
+        become a follower 
+```
+
+
 
 
 [Raft动画](http://thesecretlivesofdata.com/raft/?utm_source=hacpai.com)
