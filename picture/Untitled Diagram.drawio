@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T04:16:01.980Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="zzVxnKHlL8qDm_R3nlBu" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T04:26:27.384Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="8qAneS8IErgWDOrqYVbO" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -146,6 +146,14 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-37" value="&amp;nbsp; ScheduleNextRound():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check (if the account is deleted)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; empty the m_toBeScheduledJobs&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call ScheduleInThreadPool(CsThreadPool)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1020" y="440" width="260" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-40" target="k2qnH3VMKm6xaQe6MWwI-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-52" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-51">
+          <mxGeometry x="-0.4622" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-40" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::ScheduleInThreadPool(threadPool):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;threadPool-&amp;gt;EnqueueJob(this)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1340" y="450" width="336" height="60" as="geometry" />
         </mxCell>
@@ -160,8 +168,8 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-43" value="&lt;span&gt;&amp;nbsp; ReservedPool::StartScheduling():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new PoolSchedulingThread() as m_poolSchedulingThread&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call m_poolSchedulingThread-&amp;gt;ScheduleNextRound()&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="620" y="420" width="340" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-50" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1810" y="470" width="240" height="40" as="geometry" />
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-50" value="&amp;nbsp; &amp;nbsp; CsThreadPool::EnqueueJobWithStatus(CsJob):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PostQueuedCompletionStatus()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// post the CsJob to the queue, the Job in fact is an instance of PoolSchedlingThread" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1760" y="450" width="490" height="65" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
