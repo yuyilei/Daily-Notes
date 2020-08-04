@@ -1,1 +1,106 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T02:38:19.491Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" version="13.5.9" etag="gpEclG27MORTAaaEH_Da" type="github"><diagram id="_Wyn0VRjI95g4QghFRCT">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-04T03:21:30.209Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="agpdQz0lIN9OG3thnibw" version="13.5.9" type="github">
+  <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
+    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-5" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-4">
+          <mxGeometry x="-0.2129" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-80" y="240" />
+              <mxPoint x="-80" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-11" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-9">
+          <mxGeometry x="0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-1" value="&lt;b&gt;AzureBatchSchedulerServer&lt;/b&gt;::Init()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="210" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-2" target="k2qnH3VMKm6xaQe6MWwI-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-7" value="include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-6">
+          <mxGeometry x="0.1846" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-2" value="Initialize &lt;b&gt;BatchServer&lt;/b&gt; with GetTaskSchedulerBatchRequestEntryMap()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="130" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-3" value="StartJobRequest wait for reqeust" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="135" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-8" value="create and Initialize a CsThreadPool named m_pSchedulingThreadPool" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-30" y="270" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-12" target="k2qnH3VMKm6xaQe6MWwI-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-20" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-19">
+          <mxGeometry x="0.0783" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-12" value="Initialize(): create a number of worker threads (CsPoolThread) and Start them" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="270" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-8" target="k2qnH3VMKm6xaQe6MWwI-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="290" />
+              <mxPoint x="270" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-16" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-13">
+          <mxGeometry x="-0.0805" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-17" target="k2qnH3VMKm6xaQe6MWwI-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-23" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-22">
+          <mxGeometry x="0.2667" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-17" value="CsThread::Start(): CreateThread(CsThread::ThreadEntryStatic(this))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="270" width="300" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-21" target="k2qnH3VMKm6xaQe6MWwI-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-26" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-25">
+          <mxGeometry x="-0.375" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-21" value="ThreadEntryStatic():&lt;br&gt;pThread-&amp;gt;ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="272.5" width="180" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-24" target="k2qnH3VMKm6xaQe6MWwI-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-24" value="CsPoolThread::ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1270" y="271.5" width="170" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-27" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;CsPoolWorkerThread::PoolWorkerThread():&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;while True:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // wait for a I/O port to dequeue packet from the port&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; GetQueuedCompletionStatus()&amp;nbsp; &amp;nbsp;--&amp;gt; structure&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; get a CsJob instance from structure as pJob&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some check(if the Job completed in wrong thread)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call pJob-&amp;gt;JobReady()&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1510" y="250" width="340" height="130" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
