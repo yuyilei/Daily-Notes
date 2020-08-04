@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T07:44:22.707Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="h8ar5gHWz7JmQM88FxRr" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T07:53:48.200Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="a0A-5FUfTN_butLnCddK" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -317,11 +317,26 @@
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-16" value="+ TimerFired()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H5H2eHpZD3mYyIFVqP9Y-15">
           <mxGeometry y="26" width="160" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-30" value="&amp;nbsp; PoolSchedulingThread::StartToSchedule():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;jobPriorityQueue = ReservedPool::GetAllAssignedJobs()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do some check for all job in jobPriorityQueue and push valid job to m_toBeScheduledJobs&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleOneJobQueue()&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="2030" y="250" width="520" height="80" as="geometry" />
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-37" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.003;entryY=0.438;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-30" target="H5H2eHpZD3mYyIFVqP9Y-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2230" y="330" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-36" value="PoolSchedulingThread::BeginScheduleOneJobQueue():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="2370" y="375" width="370" height="185" as="geometry" />
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-38" value="5. call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H5H2eHpZD3mYyIFVqP9Y-37">
+          <mxGeometry x="-0.4641" y="2" relative="1" as="geometry">
+            <mxPoint x="54" y="38" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-30" value="&amp;nbsp; PoolSchedulingThread::StartToSchedule():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;jobPriorityQueue = ReservedPool::GetAllAssignedJobs()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do some check for all job in jobPriorityQueue and push valid job to m_toBeScheduledJobs&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleOneJobQueue()&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="247.5" width="520" height="82.5" as="geometry" />
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-36" value="PoolSchedulingThread::BeginScheduleOneJobQueue():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; get queue reference as refCloudQueueClient&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; set up async response callback with GetQueueMessagesAsyncCallback::DoOnQueueMessagesReceived&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // async start the get queue message call&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;refQueue-&amp;gt;BeginGetMessages()&amp;nbsp; &amp;nbsp; // in fact it is SendHttpRequest with &quot;GET&quot; method" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="375" width="590" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-39" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="550" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
