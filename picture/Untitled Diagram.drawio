@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T09:09:05.091Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="hvi7R4NqwAYh4KkyKZiu" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T09:10:53.294Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="_3JC2y8t65xkN8RaqIwJ" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -36,7 +36,7 @@
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-7" value="include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-6" vertex="1" connectable="0">
           <mxGeometry x="0.1846" y="-2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-5" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-2" value="Initialize &lt;b&gt;BatchServer&lt;/b&gt; with GetTaskSchedulerBatchRequestEntryMap()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -86,18 +86,18 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-17" value="CsThread::Start(): CreateThread(CsThread::ThreadEntryStatic(this))" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="270" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-21" target="k2qnH3VMKm6xaQe6MWwI-24" edge="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-21" target="k2qnH3VMKm6xaQe6MWwI-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-26" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-25" vertex="1" connectable="0">
           <mxGeometry x="-0.375" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="16.08" y="-0.95" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-21" value="ThreadEntryStatic(pThread):&lt;br&gt;pThread-&amp;gt;ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1020" y="272.5" width="180" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-24" target="k2qnH3VMKm6xaQe6MWwI-27" edge="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-24" target="k2qnH3VMKm6xaQe6MWwI-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-29" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-28" vertex="1" connectable="0">
@@ -105,8 +105,8 @@
             <mxPoint x="-23" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-24" value="CsPoolThread::ThreadEntry():&amp;nbsp;&lt;br&gt;&amp;nbsp;  PoolWorkThread()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1280" y="272.5" width="170" height="37" as="geometry" />
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-24" value="&amp;nbsp; CsPoolThread::ThreadEntry():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; PoolWorkThread()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1254.5" y="267.5" width="200" height="57.5" as="geometry" />
         </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-27" target="H5H2eHpZD3mYyIFVqP9Y-6" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -189,7 +189,7 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-50" value="&amp;nbsp; &amp;nbsp; CsThreadPool::EnqueueJobWithStatus(CsJob):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PostQueuedCompletionStatus()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// post the CsJob to the queue, the Job in fact is an instance of PoolSchedlingThread" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1770" y="450" width="490" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-4" edge="1">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jDfI6e330SSI-TBXZM2V-6" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jDfI6e330SSI-TBXZM2V-5" vertex="1" connectable="0">
@@ -197,13 +197,8 @@
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-7" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="930" y="188" />
-              <mxPoint x="930" y="180" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jDfI6e330SSI-TBXZM2V-9" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jDfI6e330SSI-TBXZM2V-8" vertex="1" connectable="0">
           <mxGeometry x="-0.2258" y="-1" relative="1" as="geometry">
@@ -221,7 +216,7 @@
             <mxPoint x="13.66" y="0.03" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" edge="1" target="jDfI6e330SSI-TBXZM2V-15">
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" target="jDfI6e330SSI-TBXZM2V-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1241" y="20" as="sourcePoint" />
             <mxPoint x="1366.1764705882351" y="-20" as="targetPoint" />
@@ -338,37 +333,37 @@
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-36" value="PoolSchedulingThread::BeginScheduleOneJobQueue():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; get queue reference as refCloudQueueClient&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; set up async response callback with GetQueueMessagesAsyncCallback::DoOnQueueMessagesReceived&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // async start the get queue message call&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;refQueue-&amp;gt;BeginGetMessages()&amp;nbsp; &amp;nbsp; // in fact it is SendHttpRequest with &quot;GET&quot; method" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2370" y="375" width="590" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-2" value="7. call" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-39" target="xAz5R4-X1OYPyXjpVb1S-1">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-2" value="7. call" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-39" target="xAz5R4-X1OYPyXjpVb1S-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-39" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp;GetQueueMessagesAsyncCallback::DoOnQueueMessagesReceived():&amp;nbsp;&lt;br&gt;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some check (if the Queue is empty, if the message if NULL)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for message in messages:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // create a Task base on the message&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; m_schedulingThread-&amp;gt;CreateTask()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; push the newTask to tasksInQueue&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// schedule these tasks&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;m_schedulingThread-&amp;gt;AssignNewTasksToTVM()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="550" width="410" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-4" value="8. call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.367;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xAz5R4-X1OYPyXjpVb1S-1" target="xAz5R4-X1OYPyXjpVb1S-3">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-4" value="8. call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.367;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xAz5R4-X1OYPyXjpVb1S-1" target="xAz5R4-X1OYPyXjpVb1S-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-1" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::AssignedNewTaskToTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // tasksToAssign is a priority queue&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; while tasksToAssign is not empty:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleTask(topTask)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-1" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::AssignedNewTaskToTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // tasksToAssign is a priority queue&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; while tasksToAssign is not empty:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleTask(topTask)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="730" width="330" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-6" value="9. callback" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.37;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.402;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xAz5R4-X1OYPyXjpVb1S-3" target="xAz5R4-X1OYPyXjpVb1S-5">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-6" value="9. callback" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.37;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.402;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xAz5R4-X1OYPyXjpVb1S-3" target="xAz5R4-X1OYPyXjpVb1S-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-3" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::BeginScheduleTask(task):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;pick the proper TVM for the task&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// aync query the task table and send&amp;nbsp;the schedule task protocol to picked TVM&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span&gt;&amp;nbsp;new SchedulingThreadTaskTableQuery with&amp;nbsp;&lt;/span&gt;&lt;span&gt;OnResponseReceived as callback&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-3" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::BeginScheduleTask(task):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;pick the proper TVM for the task&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// aync query the task table and send&amp;nbsp;the schedule task protocol to picked TVM&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span&gt;&amp;nbsp;new SchedulingThreadTaskTableQuery with&amp;nbsp;&lt;/span&gt;&lt;span&gt;OnResponseReceived as callback&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="860" width="460" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-9" value="10. callback" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.421;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.42;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xAz5R4-X1OYPyXjpVb1S-5" target="xAz5R4-X1OYPyXjpVb1S-8">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-9" value="10. callback" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.421;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.42;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xAz5R4-X1OYPyXjpVb1S-5" target="xAz5R4-X1OYPyXjpVb1S-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-5" value="&amp;nbsp; &amp;nbsp;&amp;nbsp;SchedulingThreadTaskTableQuery::OnResponseReceived():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do a lot of check (check the query result, check the task is valid)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // try to task to TVM&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span&gt;&amp;nbsp;ProcessScheduleTaskOnTVM(taskTableEntity()&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-5" value="&amp;nbsp; &amp;nbsp;&amp;nbsp;SchedulingThreadTaskTableQuery::OnResponseReceived():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do a lot of check (check the query result, check the task is valid)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // try to task to TVM&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;span&gt;&amp;nbsp;ProcessScheduleTaskOnTVM(taskTableEntity()&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="1020" width="390" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-11" value="11. call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.408;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.471;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xAz5R4-X1OYPyXjpVb1S-8" target="xAz5R4-X1OYPyXjpVb1S-10">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-11" value="11. call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.408;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.471;entryY=0.025;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="xAz5R4-X1OYPyXjpVb1S-8" target="xAz5R4-X1OYPyXjpVb1S-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-8" value="&amp;nbsp; &amp;nbsp;SchedulingThreadTaskTableQuery::ProcessScheduleTaskOnTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do a lot of check (pool status...)&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;ScheduleTaskOnTVM()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-8" value="&amp;nbsp; &amp;nbsp;SchedulingThreadTaskTableQuery::ProcessScheduleTaskOnTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do a lot of check (pool status...)&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;ScheduleTaskOnTVM()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="1150" width="380" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="xAz5R4-X1OYPyXjpVb1S-10" value="&amp;nbsp; &amp;nbsp;SchedulingThreadTaskTableQuery::ScheduleTaskOnTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some authentication&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for task in m_tobeScheduledTask:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // send the start Schedule protocol messag to TVM&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SceheduleTaskRequest-&amp;gt;Send()&amp;nbsp; &amp;nbsp; &amp;nbsp;// base on bond&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-10" value="&amp;nbsp; &amp;nbsp;SchedulingThreadTaskTableQuery::ScheduleTaskOnTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some authentication&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for task in m_tobeScheduledTask:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // send the start Schedule protocol messag to TVM&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SceheduleTaskRequest-&amp;gt;Send()&amp;nbsp; &amp;nbsp; &amp;nbsp;// base on bond&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="1250" width="340" height="80" as="geometry" />
         </mxCell>
       </root>
