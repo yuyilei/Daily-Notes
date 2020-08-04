@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T09:38:02.896Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="3W2vn6omNWEkGdTp_tPB" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T09:39:34.563Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="VvknUxT_djN2FyNauJjz" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -83,8 +83,8 @@
             <mxPoint x="-11" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-17" value="&lt;div&gt;&lt;span&gt;CsThread::Start():&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;CreateThread(CsThread::ThreadEntryStatic(this))&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;// this is an instance of CsPoolThread&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="640" y="270" width="270" height="60" as="geometry" />
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-17" value="&lt;div&gt;&lt;span&gt;CsThread::Start():&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;CreateThread(CsThread::ThreadEntryStatic(this))&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;// this is an instance of CsPoolThread&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="640" y="270" width="280" height="60" as="geometry" />
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-21" target="k2qnH3VMKm6xaQe6MWwI-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -94,8 +94,8 @@
             <mxPoint x="16.08" y="-0.95" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-21" value="ThreadEntryStatic(pThread):&lt;br&gt;pThread-&amp;gt;ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1020" y="272.5" width="180" height="35" as="geometry" />
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-21" value="&lt;div&gt;&lt;span&gt;&amp;nbsp;CsThread::ThreadEntryStatic(pThread):&lt;/span&gt;&lt;/div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;pThread-&amp;gt;ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="990" y="272.5" width="220" height="57.5" as="geometry" />
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-24" target="k2qnH3VMKm6xaQe6MWwI-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
