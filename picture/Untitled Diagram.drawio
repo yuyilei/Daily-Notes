@@ -1,18 +1,18 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T04:28:50.580Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="Zufb3MFX4smmyCI1LzFT" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T06:41:51.077Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="RHMdjkpGAcObOwZahiMS" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
-    <mxGraphModel dx="2249" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.881;exitY=-0.025;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-2">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.881;exitY=-0.025;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-5" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-4">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-5" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-4" vertex="1" connectable="0">
           <mxGeometry x="-0.2129" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-8">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-8" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="-180" y="300" />
@@ -20,51 +20,59 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-11" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-9">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-11" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-9" vertex="1" connectable="0">
           <mxGeometry x="0.2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-31">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-1" target="k2qnH3VMKm6xaQe6MWwI-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-33" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-32">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-33" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-32" vertex="1" connectable="0">
           <mxGeometry x="-0.1167" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-1" value="&lt;b&gt;AzureBatchSchedulerServer&lt;/b&gt;::Init()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-1" value="&lt;b&gt;AzureBatchSchedulerServer&lt;/b&gt;::Init()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-390" y="267.5" width="210" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-2" target="k2qnH3VMKm6xaQe6MWwI-3">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-2" target="k2qnH3VMKm6xaQe6MWwI-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-7" value="include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-6">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-7" value="include" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-6" vertex="1" connectable="0">
           <mxGeometry x="0.1846" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-2" value="Initialize &lt;b&gt;BatchServer&lt;/b&gt; with GetTaskSchedulerBatchRequestEntryMap()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-2" value="Initialize &lt;b&gt;BatchServer&lt;/b&gt; with GetTaskSchedulerBatchRequestEntryMap()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-30" y="130" width="250" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-3" value="StartJobRequest wait for reqeust" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="330" y="135" width="190" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-8" value="create and Initialize a CsThreadPool named m_pSchedulingThreadPool" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-30" y="270" width="250" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-12" target="k2qnH3VMKm6xaQe6MWwI-17">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-3" target="jDfI6e330SSI-TBXZM2V-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-20" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-19">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-3" value="request come" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jDfI6e330SSI-TBXZM2V-2">
+          <mxGeometry x="-0.3" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-3" value="StartJobRequest wait for reqeust" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="330" y="135" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-8" value="create and Initialize a CsThreadPool named m_pSchedulingThreadPool" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-30" y="270" width="250" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-12" target="k2qnH3VMKm6xaQe6MWwI-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-20" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-19" vertex="1" connectable="0">
           <mxGeometry x="0.0783" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-12" value="Initialize(): create a number of worker threads (CsPoolThread) and Start them" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-12" value="Initialize(): create a number of worker threads (CsPoolThread) and Start them" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="270" width="240" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-8" target="k2qnH3VMKm6xaQe6MWwI-12">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-8" target="k2qnH3VMKm6xaQe6MWwI-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="270" y="290" />
@@ -72,104 +80,110 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-16" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-13">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-16" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-13" vertex="1" connectable="0">
           <mxGeometry x="-0.0805" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-17" target="k2qnH3VMKm6xaQe6MWwI-21">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-17" target="k2qnH3VMKm6xaQe6MWwI-21" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-23" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-22">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-23" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-22" vertex="1" connectable="0">
           <mxGeometry x="0.2667" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-17" value="CsThread::Start(): CreateThread(CsThread::ThreadEntryStatic(this))" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-17" value="CsThread::Start(): CreateThread(CsThread::ThreadEntryStatic(this))" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="640" y="270" width="300" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-21" target="k2qnH3VMKm6xaQe6MWwI-24">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-21" target="k2qnH3VMKm6xaQe6MWwI-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-26" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-25">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-26" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-25" vertex="1" connectable="0">
           <mxGeometry x="-0.375" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-21" value="ThreadEntryStatic():&lt;br&gt;pThread-&amp;gt;ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-21" value="ThreadEntryStatic(pThread):&lt;br&gt;pThread-&amp;gt;ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1020" y="272.5" width="180" height="35" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-24" target="k2qnH3VMKm6xaQe6MWwI-27">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-24" target="k2qnH3VMKm6xaQe6MWwI-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-29" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-28">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-29" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-28" vertex="1" connectable="0">
           <mxGeometry x="0.504" y="-5" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-24" value="CsPoolThread::ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-24" value="CsPoolThread::ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1280" y="272.5" width="170" height="37" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-27" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;CsPoolWorkerThread::PoolWorkerThread():&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;while True:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // wait for a I/O port to dequeue packet from the port&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; GetQueuedCompletionStatus()&amp;nbsp; &amp;nbsp;--&amp;gt; structure&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; get a CsJob instance from structure as pJob&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some check(if the Job completed in wrong thread)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call pJob-&amp;gt;JobReady()&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-27" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;CsPoolWorkerThread::PoolWorkerThread():&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;while True:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // wait for a I/O port to dequeue packet from the port&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; GetQueuedCompletionStatus()&amp;nbsp; &amp;nbsp;--&amp;gt; structure&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; get a CsJob instance from structure as pJob&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some check(if the Job completed in wrong thread)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; call pJob-&amp;gt;JobReady()&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1520" y="226" width="340" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-31" target="k2qnH3VMKm6xaQe6MWwI-34">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-31" target="k2qnH3VMKm6xaQe6MWwI-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-36" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-35">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-36" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-35" vertex="1" connectable="0">
           <mxGeometry x="-0.36" y="-10" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-31" value="Start BatchSchedulerServerStartupThread and call&amp;nbsp;&lt;br&gt;ReadTenantPoolTable()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-31" value="Start BatchSchedulerServerStartupThread and call&amp;nbsp;&lt;br&gt;ReadTenantPoolTable()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-45" y="380" width="280" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-34" target="k2qnH3VMKm6xaQe6MWwI-43">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-34" target="k2qnH3VMKm6xaQe6MWwI-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-47" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-45">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-47" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-45" vertex="1" connectable="0">
           <mxGeometry x="-0.3524" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-34" value="&amp;nbsp; &amp;nbsp;ReadTenantPoolTable():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Query all pools from TT Job Table&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;for each in result:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pool = GetOrCreatePool()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some check(if the pool is delete)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pool-&amp;gt;StartScheduling()&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="310" y="360" width="240" height="130" as="geometry" />
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-34" value="&amp;nbsp; &amp;nbsp;ReadTenantPoolTable():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Query all pools from TT Job Table&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;for each in result:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pool = GetOrCreatePool()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some check(if the pool is delete)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; pool-&amp;gt;StartScheduling()&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="310" y="360" width="240" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-37" target="k2qnH3VMKm6xaQe6MWwI-40">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-37" target="k2qnH3VMKm6xaQe6MWwI-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-49" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-41">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-49" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-41" vertex="1" connectable="0">
           <mxGeometry x="-0.4" y="1" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-37" value="&amp;nbsp; ScheduleNextRound():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check (if the account is deleted)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; empty the m_toBeScheduledJobs&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call ScheduleInThreadPool(CsThreadPool)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-37" value="&amp;nbsp; ScheduleNextRound():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check (if the account is deleted)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; empty the m_toBeScheduledJobs&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call ScheduleInThreadPool(CsThreadPool)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1020" y="440" width="260" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-40" target="k2qnH3VMKm6xaQe6MWwI-50">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-40" target="k2qnH3VMKm6xaQe6MWwI-50" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-52" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-51">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-52" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-51" vertex="1" connectable="0">
           <mxGeometry x="-0.4622" y="-2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-40" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::ScheduleInThreadPool(threadPool):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;threadPool-&amp;gt;EnqueueJob(this)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-40" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::ScheduleInThreadPool(threadPool):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;threadPool-&amp;gt;EnqueueJob(this)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1340" y="450" width="336" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-43" target="k2qnH3VMKm6xaQe6MWwI-37">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-43" target="k2qnH3VMKm6xaQe6MWwI-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-48" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="k2qnH3VMKm6xaQe6MWwI-46">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-48" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-46" vertex="1" connectable="0">
           <mxGeometry x="0.2727" y="-3" relative="1" as="geometry">
             <mxPoint x="-3" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-43" value="&lt;span&gt;&amp;nbsp; ReservedPool::StartScheduling():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new PoolSchedulingThread() as m_poolSchedulingThread&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call m_poolSchedulingThread-&amp;gt;ScheduleNextRound()&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-43" value="&lt;span&gt;&amp;nbsp; ReservedPool::StartScheduling():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new PoolSchedulingThread() as m_poolSchedulingThread&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call m_poolSchedulingThread-&amp;gt;ScheduleNextRound()&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="620" y="420" width="340" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="k2qnH3VMKm6xaQe6MWwI-50" value="&amp;nbsp; &amp;nbsp; CsThreadPool::EnqueueJobWithStatus(CsJob):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PostQueuedCompletionStatus()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// post the CsJob to the queue, the Job in fact is an instance of PoolSchedlingThread" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="k2qnH3VMKm6xaQe6MWwI-50" value="&amp;nbsp; &amp;nbsp; CsThreadPool::EnqueueJobWithStatus(CsJob):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PostQueuedCompletionStatus()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// post the CsJob to the queue, the Job in fact is an instance of PoolSchedlingThread" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1760" y="450" width="490" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-1" value="&amp;nbsp; &amp;nbsp;StartJobRequestIn:ExecuteJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; if the job is persisted:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartExistingJob(job)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; else:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartNewJob()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="620" y="90" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-4" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartExistingJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if need persist: &lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // async insert the to TT job table&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; send&amp;nbsp;AddTenantJobEntityRequest&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; else:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-30" width="300" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
