@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T07:35:48.318Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="KbmsMh6EZobVb6f-zfdF" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T07:44:22.707Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="h8ar5gHWz7JmQM88FxRr" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -319,6 +319,9 @@
         </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-30" value="&amp;nbsp; PoolSchedulingThread::StartToSchedule():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;jobPriorityQueue = ReservedPool::GetAllAssignedJobs()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do some check for all job in jobPriorityQueue and push valid job to m_toBeScheduledJobs&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleOneJobQueue()&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="2030" y="250" width="520" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-36" value="PoolSchedulingThread::BeginScheduleOneJobQueue():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="375" width="370" height="185" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
