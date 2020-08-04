@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T06:59:33.444Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="zD9_b47hOB_bZTcAhwT3" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T07:04:00.495Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="Jwq8gAnGQjkgkQYwHtKK" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -47,10 +47,10 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-2" value="Initialize &lt;b&gt;BatchServer&lt;/b&gt; with GetTaskSchedulerBatchRequestEntryMap()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-30" y="130" width="250" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-3" target="jDfI6e330SSI-TBXZM2V-1">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="k2qnH3VMKm6xaQe6MWwI-3" target="jDfI6e330SSI-TBXZM2V-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-3" value="request come" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jDfI6e330SSI-TBXZM2V-2">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-3" value="request come" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jDfI6e330SSI-TBXZM2V-2" vertex="1" connectable="0">
           <mxGeometry x="-0.3" y="-3" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -179,15 +179,15 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-50" value="&amp;nbsp; &amp;nbsp; CsThreadPool::EnqueueJobWithStatus(CsJob):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PostQueuedCompletionStatus()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// post the CsJob to the queue, the Job in fact is an instance of PoolSchedlingThread" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1760" y="450" width="490" height="65" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-4">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-6" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jDfI6e330SSI-TBXZM2V-5">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-6" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jDfI6e330SSI-TBXZM2V-5" vertex="1" connectable="0">
           <mxGeometry x="-0.1386" y="1" relative="1" as="geometry">
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-7">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="930" y="188" />
@@ -195,41 +195,57 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-9" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jDfI6e330SSI-TBXZM2V-8">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-9" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jDfI6e330SSI-TBXZM2V-8" vertex="1" connectable="0">
           <mxGeometry x="-0.2258" y="-1" relative="1" as="geometry">
             <mxPoint y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-1" value="&amp;nbsp; &amp;nbsp;StartJobRequestIn:ExecuteJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; if the job is persisted:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartExistingJob(job)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; else:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartNewJob()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-1" value="&amp;nbsp; &amp;nbsp;StartJobRequestIn:ExecuteJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; if the job is persisted:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartExistingJob(job)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; else:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartNewJob()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="620" y="90" width="260" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jDfI6e330SSI-TBXZM2V-4" target="jDfI6e330SSI-TBXZM2V-10">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-4" target="jDfI6e330SSI-TBXZM2V-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-13" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jDfI6e330SSI-TBXZM2V-11">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-13" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jDfI6e330SSI-TBXZM2V-11" vertex="1" connectable="0">
           <mxGeometry x="-0.3211" y="-5" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-4" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartExistingJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if need persist: &lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // async insert the to TT job table&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; send&amp;nbsp;AddTenantJobEntityRequest&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; else:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="941" width="300" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.093;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jDfI6e330SSI-TBXZM2V-7" target="jDfI6e330SSI-TBXZM2V-10">
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="jDfI6e330SSI-TBXZM2V-4" target="jDfI6e330SSI-TBXZM2V-15">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-14" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jDfI6e330SSI-TBXZM2V-12">
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-3" value="branch call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H5H2eHpZD3mYyIFVqP9Y-1">
+          <mxGeometry x="-0.411" y="33" relative="1" as="geometry">
+            <mxPoint x="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-4" value="&lt;br&gt;&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartExistingJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if need persist: &lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // async insert the to TT job table&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; send&amp;nbsp;AddTenantJobEntityRequest&amp;nbsp;&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; else:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="941" width="300" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.093;entryY=1.029;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-7" target="jDfI6e330SSI-TBXZM2V-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-14" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="jDfI6e330SSI-TBXZM2V-12" vertex="1" connectable="0">
           <mxGeometry x="0.0501" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-7" value="&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartNewJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // async insert an entry to the TT job table&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;send&amp;nbsp;AddTenantJobEntityRequest&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="jDfI6e330SSI-TBXZM2V-7" value="&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartJobRequestIn::StartNewJob():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // async insert an entry to the TT job table&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;send&amp;nbsp;AddTenantJobEntityRequest&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="965.5" y="150" width="289" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-10" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp;AddTenantJobEntityRequest::OnResponseReceived():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do a lot of stuff(check, logging)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;call AzureBatchSchedulerServer-&amp;gt;StartJob(job)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="jDfI6e330SSI-TBXZM2V-10" target="jDfI6e330SSI-TBXZM2V-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-4" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H5H2eHpZD3mYyIFVqP9Y-2">
+          <mxGeometry x="-0.3607" y="-1" relative="1" as="geometry">
+            <mxPoint x="2" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-10" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp;AddTenantJobEntityRequest::OnResponseReceived():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do a lot of stuff(check, logging)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;call AzureBatchSchedulerServer-&amp;gt;StartJob(job)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1320" y="70" width="311" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="jDfI6e330SSI-TBXZM2V-15" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // start the job in the account&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_activeWorkitems.insert(job)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;/  assign the job in pool &lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="-30" width="290" height="60" as="geometry" />
+        <mxCell id="jDfI6e330SSI-TBXZM2V-15" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // insert the job to memory map&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 1. start the job in the account&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_activeWorkitems.insert(job)&amp;nbsp; in Account&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; //&amp;nbsp; 2. assign the job in pool&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_assignedJobs.insert(job)&amp;nbsp; in ReservedPool&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1364" y="-80" width="286" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
