@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T09:10:53.294Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="_3JC2y8t65xkN8RaqIwJ" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T09:33:12.894Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="YQ7PxI_1ocHX-1yFK6Xm" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -365,6 +365,48 @@
         </mxCell>
         <mxCell id="xAz5R4-X1OYPyXjpVb1S-10" value="&amp;nbsp; &amp;nbsp;SchedulingThreadTaskTableQuery::ScheduleTaskOnTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some authentication&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for task in m_tobeScheduledTask:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // send the start Schedule protocol messag to TVM&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;SceheduleTaskRequest-&amp;gt;Send()&amp;nbsp; &amp;nbsp; &amp;nbsp;// base on bond&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="1250" width="340" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-13" value="&amp;nbsp;+ static ThreadEntryStatic()" style="html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="850" y="731" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-2" value="CsThread" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="645" width="160" height="86" as="geometry">
+            <mxRectangle x="1000" y="644" width="90" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-3" value="+ Start()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPXm6bu6WHckmJ1N6wpi-2">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="YPXm6bu6WHckmJ1N6wpi-2">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-5" value="+ ThreadEntry()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPXm6bu6WHckmJ1N6wpi-2">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-14" value="CsPoolWorkerThread" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1081" y="645" width="160" height="86" as="geometry">
+            <mxRectangle x="1000" y="644" width="90" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-15" value="+ ThreadEntry()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPXm6bu6WHckmJ1N6wpi-14">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="YPXm6bu6WHckmJ1N6wpi-14">
+          <mxGeometry y="52" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-17" value="+ PoolWorkerEntry()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPXm6bu6WHckmJ1N6wpi-14">
+          <mxGeometry y="60" width="160" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-18" value="&amp;nbsp;+ PoolWorkerEntry()" style="html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="850" y="761" width="160" height="29" as="geometry" />
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-19" value="CsPoolThread" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="1300" y="644" width="160" height="52" as="geometry">
+            <mxRectangle x="1000" y="644" width="90" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YPXm6bu6WHckmJ1N6wpi-20" value="+ ThreadEntry()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="YPXm6bu6WHckmJ1N6wpi-19">
+          <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
