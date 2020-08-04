@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T08:27:47.316Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="7G8ehGLC6SuVpdyJCeC8" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T08:40:08.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="bQUbZUH7pbEBr8jNqd5-" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -338,8 +338,20 @@
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-36" value="PoolSchedulingThread::BeginScheduleOneJobQueue():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; do some check&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; get queue reference as refCloudQueueClient&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; set up async response callback with GetQueueMessagesAsyncCallback::DoOnQueueMessagesReceived&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // async start the get queue message call&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;refQueue-&amp;gt;BeginGetMessages()&amp;nbsp; &amp;nbsp; // in fact it is SendHttpRequest with &quot;GET&quot; method" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2370" y="375" width="590" height="105" as="geometry" />
         </mxCell>
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-2" value="7. call" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-39" target="xAz5R4-X1OYPyXjpVb1S-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-39" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp;GetQueueMessagesAsyncCallback::DoOnQueueMessagesReceived():&amp;nbsp;&lt;br&gt;&lt;/span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; do some check (if the Queue is empty, if the message if NULL)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for message in messages:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // create a Task base on the message&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; m_schedulingThread-&amp;gt;CreateTask()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; push the newTask to tasksInQueue&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// schedule these tasks&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;m_schedulingThread-&amp;gt;AssignNewTasksToTVM()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2380" y="550" width="410" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-4" value="8. call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.367;entryY=0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="xAz5R4-X1OYPyXjpVb1S-1" target="xAz5R4-X1OYPyXjpVb1S-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-1" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::AssignedNewTaskToTVM():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // tasksToAssign is a priority queue&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; while tasksToAssign is not empty:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleTask(topTask)" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="730" width="330" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xAz5R4-X1OYPyXjpVb1S-3" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::BeginScheduleTask(task):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;pick the proper TVM for the task&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// aync query the task table and send&amp;nbsp;the schedule task protocol to picked TVM&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span&gt;&amp;nbsp;new SchedulingThreadTaskTableQuery with&amp;nbsp;&lt;/span&gt;&lt;span&gt;OnResponseReceived as callback&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2380" y="860" width="460" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
