@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T07:04:00.495Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="Jwq8gAnGQjkgkQYwHtKK" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T07:06:19.888Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="3n3MecBrm_vU8MSbOxCA" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -176,8 +176,21 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-43" value="&lt;span&gt;&amp;nbsp; ReservedPool::StartScheduling():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new PoolSchedulingThread() as m_poolSchedulingThread&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call m_poolSchedulingThread-&amp;gt;ScheduleNextRound()&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="620" y="420" width="340" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-50" target="k2qnH3VMKm6xaQe6MWwI-27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2005" y="340" />
+              <mxPoint x="1860" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-8" value="1. post an instance of PoolSchedulingThread" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H5H2eHpZD3mYyIFVqP9Y-7">
+          <mxGeometry x="-0.3886" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-50" value="&amp;nbsp; &amp;nbsp; CsThreadPool::EnqueueJobWithStatus(CsJob):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;PostQueuedCompletionStatus()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// post the CsJob to the queue, the Job in fact is an instance of PoolSchedlingThread" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1760" y="450" width="490" height="65" as="geometry" />
+          <mxGeometry x="1770" y="445" width="490" height="65" as="geometry" />
         </mxCell>
         <mxCell id="jDfI6e330SSI-TBXZM2V-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="jDfI6e330SSI-TBXZM2V-1" target="jDfI6e330SSI-TBXZM2V-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -246,6 +259,9 @@
         </mxCell>
         <mxCell id="jDfI6e330SSI-TBXZM2V-15" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // insert the job to memory map&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 1. start the job in the account&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_activeWorkitems.insert(job)&amp;nbsp; in Account&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; //&amp;nbsp; 2. assign the job in pool&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_assignedJobs.insert(job)&amp;nbsp; in ReservedPool&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1364" y="-80" width="286" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-6" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1970" y="212.5" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
