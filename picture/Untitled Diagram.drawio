@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T06:50:47.163Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="qX-RnueOEXNkOjsBE2q6" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T06:59:33.444Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="zD9_b47hOB_bZTcAhwT3" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -90,7 +90,7 @@
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-23" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-22" vertex="1" connectable="0">
           <mxGeometry x="0.2667" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-11" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-17" value="CsThread::Start(): CreateThread(CsThread::ThreadEntryStatic(this))" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -112,7 +112,7 @@
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-29" value="call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="k2qnH3VMKm6xaQe6MWwI-28" vertex="1" connectable="0">
           <mxGeometry x="0.504" y="-5" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-23" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-24" value="CsPoolThread::ThreadEntry()" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
@@ -227,6 +227,9 @@
         </mxCell>
         <mxCell id="jDfI6e330SSI-TBXZM2V-10" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp;AddTenantJobEntityRequest::OnResponseReceived():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do a lot of stuff(check, logging)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;call AzureBatchSchedulerServer-&amp;gt;StartJob(job)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1320" y="70" width="311" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jDfI6e330SSI-TBXZM2V-15" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // start the job in the account&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_activeWorkitems.insert(job)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;/  assign the job in pool &lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1310" y="-30" width="290" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
