@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-04T07:25:56.031Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="7Ot8P-sqbegvrRPbHI4u" version="13.5.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-04T07:35:48.318Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="KbmsMh6EZobVb6f-zfdF" version="13.5.9" type="github">
   <diagram id="_Wyn0VRjI95g4QghFRCT" name="Page-1">
     <mxGraphModel dx="2249" dy="1931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -176,7 +176,7 @@
         <mxCell id="k2qnH3VMKm6xaQe6MWwI-43" value="&lt;span&gt;&amp;nbsp; ReservedPool::StartScheduling():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new PoolSchedulingThread() as m_poolSchedulingThread&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; call m_poolSchedulingThread-&amp;gt;ScheduleNextRound()&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="620" y="420" width="340" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-50">
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.924;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="k2qnH3VMKm6xaQe6MWwI-50" target="k2qnH3VMKm6xaQe6MWwI-27">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1860" y="340" as="targetPoint" />
           </mxGeometry>
@@ -257,8 +257,18 @@
         <mxCell id="jDfI6e330SSI-TBXZM2V-10" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: left ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;&amp;nbsp; &amp;nbsp;AddTenantJobEntityRequest::OnResponseReceived():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do a lot of stuff(check, logging)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;call AzureBatchSchedulerServer-&amp;gt;StartJob(job)&amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1320" y="70" width="311" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-31" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="jDfI6e330SSI-TBXZM2V-15" target="H5H2eHpZD3mYyIFVqP9Y-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2300" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-32" value="read m_assignedJobs" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H5H2eHpZD3mYyIFVqP9Y-31">
+          <mxGeometry x="-0.0929" y="4" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="jDfI6e330SSI-TBXZM2V-15" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&amp;nbsp; AzureBatchSchedulerServer-&amp;gt;StartJob(job):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // insert the job to memory map&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; // 1. start the job in the account&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_activeWorkitems.insert(job)&amp;nbsp; in Account&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; //&amp;nbsp; 2. assign the job in pool&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_assignedJobs.insert(job)&amp;nbsp; in ReservedPool&lt;br&gt;&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1364" y="-80" width="286" height="90" as="geometry" />
+          <mxGeometry x="1820" y="-80" width="270" height="100" as="geometry" />
         </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-26" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-6" target="H5H2eHpZD3mYyIFVqP9Y-25">
           <mxGeometry relative="1" as="geometry" />
@@ -271,8 +281,26 @@
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-6" value="&amp;nbsp; &amp;nbsp;CsTimer.JobReady():&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;span&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; TimerFired(firedTime)&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1900" y="70" width="150" height="52.5" as="geometry" />
         </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-21" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-15" target="H5H2eHpZD3mYyIFVqP9Y-11">
+          <mxGeometry x="-1" y="275" width="160" relative="1" as="geometry">
+            <mxPoint x="1950" y="620" as="sourcePoint" />
+            <mxPoint x="2110" y="620" as="targetPoint" />
+            <mxPoint x="270" y="-224" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.002;entryY=0.588;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-25" target="H5H2eHpZD3mYyIFVqP9Y-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-35" value="4. call" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H5H2eHpZD3mYyIFVqP9Y-34">
+          <mxGeometry x="0.2354" y="-2" relative="1" as="geometry">
+            <mxPoint x="-9.36" y="-11.09" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-25" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::TimerFired():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if m_active:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartToSchedule()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1900" y="166" width="210" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-10" value="CsTimer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="1780" y="600" width="160" height="86" as="geometry" />
+          <mxGeometry x="1770" y="660" width="160" height="86" as="geometry" />
         </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-11" value="+ JobReady() " style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H5H2eHpZD3mYyIFVqP9Y-10">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
@@ -283,21 +311,14 @@
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-13" value="+ TimerFired()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H5H2eHpZD3mYyIFVqP9Y-10">
           <mxGeometry y="60" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-21" value="" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="H5H2eHpZD3mYyIFVqP9Y-15" target="H5H2eHpZD3mYyIFVqP9Y-11">
-          <mxGeometry x="-1" y="275" width="160" relative="1" as="geometry">
-            <mxPoint x="1960" y="560" as="sourcePoint" />
-            <mxPoint x="2120" y="560" as="targetPoint" />
-            <mxPoint x="270" y="-224" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-15" value="PoolSchedulingThread" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="2030" y="614" width="160" height="50" as="geometry" />
+          <mxGeometry x="2020" y="674" width="160" height="50" as="geometry" />
         </mxCell>
         <mxCell id="H5H2eHpZD3mYyIFVqP9Y-16" value="+ TimerFired()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="H5H2eHpZD3mYyIFVqP9Y-15">
           <mxGeometry y="26" width="160" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-25" value="&amp;nbsp; &amp;nbsp;PoolSchedulingThread::TimerFired():&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if m_active:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;StartToSchedule()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1900" y="166" width="210" height="60" as="geometry" />
+        <mxCell id="H5H2eHpZD3mYyIFVqP9Y-30" value="&amp;nbsp; PoolSchedulingThread::StartToSchedule():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;jobPriorityQueue = ReservedPool::GetAllAssignedJobs()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do some check for all job in jobPriorityQueue and push valid job to m_toBeScheduledJobs&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleOneJobQueue()&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="250" width="520" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
