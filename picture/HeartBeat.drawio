@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-07T07:09:59.814Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="0G-lZGBUZjRfMna6kLPr" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-07T07:25:40.963Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="CTDQLw18Kn_2YgmJV8xE" version="13.6.0" type="github">
   <diagram id="dzgoCQNqx3lQuofZHwmd" name="Page-1">
     <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -88,6 +88,9 @@
         <mxCell id="01PI_eOZKyIenbhRhpd1-28" value="&amp;nbsp; RecurringAction::Star():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;create a CsThreadPool named m_threadpool and Initialize it&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Schedule(m_startTime)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartMonitor()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="760" y="240" width="350" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="01PI_eOZKyIenbhRhpd1-43" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-29" target="01PI_eOZKyIenbhRhpd1-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-29" value="&amp;nbsp; CsThreadPool::Initialzie():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; create a CsTimerThread named m_pTimerThread&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; m_pTimerThread-&amp;gt;Start()&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1210" y="200" width="330" height="70" as="geometry" />
         </mxCell>
@@ -118,8 +121,17 @@
         <mxCell id="01PI_eOZKyIenbhRhpd1-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-35" target="01PI_eOZKyIenbhRhpd1-31">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="01PI_eOZKyIenbhRhpd1-45" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-39" target="01PI_eOZKyIenbhRhpd1-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-39" value="&amp;nbsp; CsThread::Start()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; create thread and call ThreadEntryStatic, which actually call ThreadEntry" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1640" y="190" width="280" height="60" as="geometry" />
+          <mxGeometry x="1640" y="190" width="290" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="01PI_eOZKyIenbhRhpd1-44" value="&amp;nbsp; &amp;nbsp;CsTimerThread::ThreadEntry()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; While True:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;wait for m_timerEventHandle(signal)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;m_timerWheel.ProcessTimers()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;if pool should quit:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; break" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2030" y="160" width="260" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="01PI_eOZKyIenbhRhpd1-46" value="" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2370" y="160" width="250" height="100" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
