@@ -1,6 +1,6 @@
 # 和为 K 的最少斐波那契数字数目 
 
-本题是leetcode上的一道题，求和为k的最少斐波那契数字的数目，题目链接： https://leetcode-cn.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/， 代码在：https://github.com/yuyilei/LeetCode/blob/master/Array/%E5%92%8C%E4%B8%BAK%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.cpp。 
+本题是leetcode上的一道题，求和为k的最少斐波那契数字的数目，题目链接： https://leetcode-cn.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/ ， 代码在：https://github.com/yuyilei/LeetCode/blob/master/Array/Find-the-Minimum-Number-of-Fibonacci-Numbers-Whose-Sum-Is-K.cpp 。 
 
 本题可以用贪心法，先找出小于等于k的斐波那契数字，再从大到小取数字，如果当前斐波那契数小于等于当前的k，就取出当前斐波那契数，并将k减去这个斐波那契数，数目加一。 
 
