@@ -24,6 +24,11 @@
 16. [Log-Structured-Merge Tree in LevelDB](https://github.com/yuyilei/Daily-Notes/blob/master/md/Log-Structured-Merge-tree.md)
 
 
+## LeetCode 
+
+1. [和为K的最少斐波那契数字数目](https://github.com/yuyilei/Daily-Notes/blob/master/md/Fibonacci-Numbers-Whose-Sum-Is-K.md) 
+
+
 ## Algorithms 
 
 1. [最大公约数（辗转相除法）的改进](https://github.com/yuyilei/Algorithms/blob/master/C%2B%2B/gcd.cpp)
@@ -65,3 +70,4 @@
 37. [无序序列中求第K小元素](https://github.com/yuyilei/Algorithms/blob/master/Python/Kth-smallest-in-a-segment.py)
 38. [Extenible Hash](https://github.com/yuyilei/Algorithms/blob/master/Python/Extenible-Hash.py)
 39. [SkipList](https://github.com/yuyilei/Daily-Notes/blob/master/C%2B%2B/SkipList.cpp) 
+
