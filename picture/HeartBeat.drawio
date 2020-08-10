@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-10T08:39:08.662Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="_Vp1r6W4LOMV1qBFW9RX" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-10T08:40:13.344Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="jbyli83oWUVP4UMk61Cy" version="13.6.0" type="github">
   <diagram id="dzgoCQNqx3lQuofZHwmd" name="Page-1">
     <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -160,7 +160,7 @@
         <mxCell id="01PI_eOZKyIenbhRhpd1-109" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-100" target="01PI_eOZKyIenbhRhpd1-102">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="01PI_eOZKyIenbhRhpd1-100" value="&amp;nbsp; RecurringAction::Schedule(time):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new RecurringActionTimer base on the time as timer&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_threadpool-&amp;gt;ScheduleTimerInterval(timer)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="01PI_eOZKyIenbhRhpd1-100" value="&amp;nbsp; RecurringAction::Schedule(time):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new RecurringActionTimer base on the time and this named timer&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_threadpool-&amp;gt;ScheduleTimerInterval(timer)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1210" y="310" width="320" height="60" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-111" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.007;entryY=0.379;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-102" target="01PI_eOZKyIenbhRhpd1-110">
