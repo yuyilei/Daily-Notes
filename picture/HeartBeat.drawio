@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-10T06:49:05.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="UyWE5ifNz_iaIQvLQDb7" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-10T07:15:16.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="YtWekTRBdLqwn3H85FqT" version="13.6.0" type="github">
   <diagram id="dzgoCQNqx3lQuofZHwmd" name="Page-1">
     <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -70,32 +70,32 @@
         <mxCell id="01PI_eOZKyIenbhRhpd1-13" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="01PI_eOZKyIenbhRhpd1-10">
           <mxGeometry y="60" width="170" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="01PI_eOZKyIenbhRhpd1-42" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-28" target="01PI_eOZKyIenbhRhpd1-29">
+        <mxCell id="01PI_eOZKyIenbhRhpd1-101" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-28" target="01PI_eOZKyIenbhRhpd1-100">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-28" value="&amp;nbsp; RecurringAction::Star():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;create a CsThreadPool named m_threadpool and Initialize it&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Schedule(m_startTime)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartMonitor()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="760" y="240" width="350" height="70" as="geometry" />
+          <mxGeometry x="780" y="305" width="350" height="70" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-43" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-29" target="01PI_eOZKyIenbhRhpd1-39">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-29" value="&amp;nbsp; CsThreadPool::Initialzie():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; create a CsTimerThread named m_pTimerThread&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; m_pTimerThread-&amp;gt;Start()&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1210" y="200" width="300" height="70" as="geometry" />
+          <mxGeometry x="1740" y="1840" width="300" height="70" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-45" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-39" target="01PI_eOZKyIenbhRhpd1-44">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-39" value="&amp;nbsp; CsThread::Start()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; create thread and call ThreadEntryStatic, which actually call ThreadEntry" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1640" y="190" width="300" height="60" as="geometry" />
+          <mxGeometry x="2170" y="1830" width="300" height="60" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-44" value="&amp;nbsp; &amp;nbsp;CsTimerThread::ThreadEntry()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; While True:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;wait for m_timerEventHandle(signal)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;m_timerWheel.ProcessTimers()&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;if pool should quit:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; break" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="2030" y="150" width="260" height="100" as="geometry" />
+          <mxGeometry x="2560" y="1790" width="260" height="100" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-46" value="&amp;nbsp; &amp;nbsp; CsTimerWheel::ProcessTimers():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="2370" y="160" width="250" height="100" as="geometry" />
+          <mxGeometry x="2900" y="1800" width="250" height="100" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-47" value="&amp;nbsp; &amp;nbsp;CsTimerWheel::ProcessSlot():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // process all timers in the slow&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; for each timer in timerList:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;m_pPool-&amp;gt;EnqueueJob(timer)&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// m_pPool is an instance of CsThreadPool" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="2730" y="140" width="290" height="80" as="geometry" />
+          <mxGeometry x="3260" y="1780" width="290" height="80" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-48" value="CsThreadPool" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="-360" y="900" width="270" height="90" as="geometry" />
@@ -224,6 +224,12 @@
               <mxPoint x="-660" y="910" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="01PI_eOZKyIenbhRhpd1-100" value="&amp;nbsp; RecurringAction::Schedule(time):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; new RecurringActionTimer base on the time as timer&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; m_threadpool-&amp;gt;ScheduleTimerInterval(timer)&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1210" y="310" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="01PI_eOZKyIenbhRhpd1-102" value="&amp;nbsp; &amp;nbsp;CsThreadPool::ScheduleTimerMs():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;m_pTimerThread-&amp;gt;ScheduleTimerMs()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// actually call m_timerWheel-&amp;gt;ScheduleTimerMs()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="315" width="310" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
