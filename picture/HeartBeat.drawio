@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-10T07:36:20.286Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="wJY-NsSkwsFDR-Fb_Ex3" version="13.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-10T07:37:54.890Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="Ocv4hfWQ4AnE0DQxuw5E" version="13.6.0" type="github">
   <diagram id="dzgoCQNqx3lQuofZHwmd" name="Page-1">
-    <mxGraphModel dx="3694" dy="1524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -37,8 +37,10 @@
         <mxCell id="01PI_eOZKyIenbhRhpd1-101" value="call" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-28" target="01PI_eOZKyIenbhRhpd1-100">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="01PI_eOZKyIenbhRhpd1-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-28" target="01PI_eOZKyIenbhRhpd1-51">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="01PI_eOZKyIenbhRhpd1-114" value="call" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-28" target="01PI_eOZKyIenbhRhpd1-51">
+          <mxGeometry x="-0.2857" y="-25" relative="1" as="geometry">
+            <mxPoint x="-24" y="25" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-28" value="&amp;nbsp; RecurringAction::Star():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;create a CsThreadPool named m_threadpool and Initialize it&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;Schedule(m_startTime)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;StartMonitor()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="780" y="305" width="350" height="70" as="geometry" />
@@ -111,7 +113,7 @@
           <mxGeometry x="1350" y="922" width="520" height="148" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-87" value="&amp;nbsp; &amp;nbsp;CsTimerWheel have 1024 slots, and each tick is 8 ms, so the max interval is 8*1024 = 8.2s&lt;br&gt;&amp;nbsp; &amp;nbsp;each slot has a list of timer (instance of CsJob)" style="shape=card;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="930" y="1130" width="280" height="90" as="geometry" />
+          <mxGeometry x="640" y="968" width="280" height="90" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-89" value="&amp;nbsp; &amp;nbsp;CsTimerWheel::GetSlotIndexFromTime(time):&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; timeStamp = timeStamp + 8 -1&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; timeStamp &amp;gt;&amp;gt;= 3&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp; &amp;nbsp;timeStamp &amp;amp;= ((1&amp;lt;&amp;lt;10)-1)&amp;nbsp;&lt;br&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp;// e.g.&amp;nbsp; &amp;nbsp;timeStamp = 1~8,&amp;nbsp; index = 1&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;timeStamp = 9~16&amp;nbsp; index = 2&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;...." style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1350" y="1140" width="280" height="130" as="geometry" />
@@ -130,6 +132,9 @@
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-102" value="&amp;nbsp; &amp;nbsp;CsThreadPool::ScheduleTimerMs():&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;m_pTimerThread-&amp;gt;ScheduleTimerMs()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// actually call m_timerWheel-&amp;gt;ScheduleTimerMs()" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1610" y="315" width="310" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="01PI_eOZKyIenbhRhpd1-115" value="set the signal&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.583;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="01PI_eOZKyIenbhRhpd1-110" target="01PI_eOZKyIenbhRhpd1-53">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="01PI_eOZKyIenbhRhpd1-110" value="&amp;nbsp; &amp;nbsp;CsTimerWheel::ScheduleTimerMs(timer, delay):&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; expiryTime = currentTime + delay&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; get slotIndex from expiryTime&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; if expiryTIme is before next expire time:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // wake up the timer&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; set the CsTimerWheel&#39;s signal&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1980" y="305" width="300" height="95" as="geometry" />
