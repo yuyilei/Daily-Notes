@@ -27,6 +27,7 @@
 ## LeetCode 
 
 1. [和为K的最少斐波那契数字数目](https://github.com/yuyilei/Daily-Notes/blob/master/md/Fibonacci-Numbers-Whose-Sum-Is-K.md) 
+2. [找出第k小的距离对](https://github.com/yuyilei/Daily-Notes/blob/master/md/find-k-th-smallest-pair-distance.md) 
 
 
 ## Algorithms 
