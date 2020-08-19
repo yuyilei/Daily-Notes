@@ -1,20 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T06:25:05.304Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="YnWC2BGWZiPC9AuXEgOo" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-19T06:48:10.626Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="5U1FKYVuOCQYCo0peus5" version="13.6.2" type="github">
   <diagram id="l00sNPKQN6jFdvKRunxz" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GB9CBjn94KdI325h25Sr-1" value="&lt;br&gt;TVM1 pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="120" y="380" width="180" height="80" as="geometry" />
+        <mxCell id="GB9CBjn94KdI325h25Sr-7" value="1. dequeued from I/O port by thread1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.57;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="GB9CBjn94KdI325h25Sr-1" target="GB9CBjn94KdI325h25Sr-6">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GB9CBjn94KdI325h25Sr-3" value="Thread pool&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="425" y="310" width="105" height="60" as="geometry" />
+        <mxCell id="GB9CBjn94KdI325h25Sr-1" value="&lt;br&gt;TVM1 pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="100" y="370" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="GB9CBjn94KdI325h25Sr-4" value="&lt;br&gt;TVM2 pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="120" y="470" width="180" height="80" as="geometry" />
+          <mxGeometry x="100" y="500" width="180" height="80" as="geometry" />
         </mxCell>
         <mxCell id="GB9CBjn94KdI325h25Sr-5" value="&lt;br&gt;TVMn pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="120" y="610" width="180" height="80" as="geometry" />
+          <mxGeometry x="100" y="620" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-11" value="2. start to schedule" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GB9CBjn94KdI325h25Sr-6" target="GB9CBjn94KdI325h25Sr-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-6" value="Thread pool&amp;nbsp;&lt;br&gt;every thread always want to dequeue a TVM pool context&amp;nbsp;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="420" y="480" width="255" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-16" value="3. call" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GB9CBjn94KdI325h25Sr-10" target="GB9CBjn94KdI325h25Sr-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-10" value="Pop the top job from job priority queue&amp;nbsp;&lt;br&gt;then call BeginScheduleOneJobQueue" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="380" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-17" value="4. call" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GB9CBjn94KdI325h25Sr-12" target="GB9CBjn94KdI325h25Sr-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-12" value="BeginScheduleOneJobQueue&lt;br&gt;Whether this job schedule succeed or not,&amp;nbsp; finally call EndScheduleOneJobQueue&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="520" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GB9CBjn94KdI325h25Sr-13" target="GB9CBjn94KdI325h25Sr-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="915" y="770" />
+              <mxPoint x="60" y="770" />
+              <mxPoint x="60" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-18" value="5. enqueue the context to I/O again, wait for next schedule round" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GB9CBjn94KdI325h25Sr-15">
+          <mxGeometry x="-0.2263" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-13" value="EndScheduleOneJobQueue&amp;nbsp;&lt;br&gt;End the job schedule, then enqueue the TVM pool context again&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="785" y="650" width="250" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
