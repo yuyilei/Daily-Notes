@@ -1,11 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2020-08-19T06:22:47.165Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="XVU7JowgEHlHgI-DOeUA" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-19T06:25:05.304Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="YnWC2BGWZiPC9AuXEgOo" version="13.6.2" type="github">
   <diagram id="l00sNPKQN6jFdvKRunxz" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GB9CBjn94KdI325h25Sr-1" value="&lt;br&gt;TVM pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="GB9CBjn94KdI325h25Sr-1" value="&lt;br&gt;TVM1 pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
           <mxGeometry x="120" y="380" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-3" value="Thread pool&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="425" y="310" width="105" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-4" value="&lt;br&gt;TVM2 pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="120" y="470" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="GB9CBjn94KdI325h25Sr-5" value="&lt;br&gt;TVMn pool context&amp;nbsp;&lt;br&gt;with job priority queue&amp;nbsp;" style="shape=cylinder2;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="120" y="610" width="180" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
