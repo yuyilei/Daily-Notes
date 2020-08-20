@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-20T09:54:38.505Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="R6q3yAgJhgCTYdzo9hbn" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-20T09:55:10.743Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="vZEwvoad97PMAPRvFbhI" version="13.6.2" type="github">
   <diagram id="S9prKzxcYEfgRn-kXjxR" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -35,6 +35,9 @@
         </mxCell>
         <mxCell id="gZy7wTxdMB85PJ2hgEh0-2" value="&amp;nbsp; // callback&amp;nbsp;&lt;br&gt;&amp;nbsp; DoOnQueueMessageeReceived(message) :&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;do lots of stuff&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;...&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;if message is NULL:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// this job queue finish, call the function to switch queue type&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;EndScheduleOneJobQueue()&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;else:&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// continue in this job queue&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;create tasks, then assign them to TVM&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;// try to pull more message of this queue type if possible&amp;nbsp;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;BeginScheduleOneJobQueue()&amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="350" y="470" width="380" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="gZy7wTxdMB85PJ2hgEh0-11" value="In job queue level" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="680" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
