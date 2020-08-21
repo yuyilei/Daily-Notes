@@ -1,17 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2020-08-21T03:35:04.301Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="i2ofHOnq6wTlt4Baupwh" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-21T03:37:09.612Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="tgkpgtzXag_A4ZM_7SXk" version="13.6.2" type="github">
   <diagram id="dCHcs1xFXrtLgSI9lg_W" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="HskD_8p6qhML8TpnokmM-5" value="TVM Pool&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="710" width="330" height="120" as="geometry" />
+        <mxCell id="HskD_8p6qhML8TpnokmM-5" value="&amp;nbsp;TVM Pool&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="710" width="360" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="HskD_8p6qhML8TpnokmM-6" value="Dedicated Pool" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="730" width="120" height="80" as="geometry" />
+        <mxCell id="HskD_8p6qhML8TpnokmM-6" value="Dedicated Pool&amp;nbsp;&lt;br&gt;has m_availableTVMs" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="720" width="140" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="HskD_8p6qhML8TpnokmM-7" value="LowPriority Pool" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="370" y="730" width="120" height="80" as="geometry" />
+        <mxCell id="HskD_8p6qhML8TpnokmM-7" value="LowPriority Pool&lt;br&gt;has m_availableTMs" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="725" width="140" height="95" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
