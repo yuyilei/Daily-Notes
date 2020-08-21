@@ -1,1 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2020-08-21T06:56:02.491Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" version="13.6.2" etag="qxW5UERGwVTOLgJNoX-J" type="github"><diagram id="WoMS50uPxe2RVB2vlRWp">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-08-21T07:13:27.867Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="kZ4NygPABg396H2H061d" version="13.6.2" type="github">
+  <diagram id="WoMS50uPxe2RVB2vlRWp" name="Page-1">
+    <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M3FELBGRzBT180L0eO_4-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="145" y="290" width="205" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-2" value="JobManger Job queue" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="310" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-3" value="Dedicated Job queue" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="380" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-4" value="Any Job queue" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="450" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-5" value="Preemptible Job queue" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="520" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-6" value="Local Job instance" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="192.5" y="620" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-8" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-40" y="439" as="sourcePoint" />
+            <mxPoint x="120" y="439" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="439" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-9" value="Start Job Request from WIJ&lt;br&gt;then Create a Job intance" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="390" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-10" value="Only tell different job queues&#39; name, don&#39;t have tasks&amp;nbsp; &amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-45" y="450" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-11" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="397.5" y="440" as="sourcePoint" />
+            <mxPoint x="532.5" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-12" value="Start to Schedule this Job" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="400" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M3FELBGRzBT180L0eO_4-13" value="&amp;nbsp; fetch respective tasks&#39; information from Storage&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="450" width="160" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
