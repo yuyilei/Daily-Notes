@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-08-25T06:57:50.045Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="TMpUiHruk87qxK97m-jD" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-25T07:05:03.462Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="87btz8TBP7oP41GQ-8nM" version="13.6.2" type="github">
   <diagram id="Af-E0rmEuBw-firK7_nA" name="Page-1">
-    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -55,6 +55,48 @@
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-14" value="Rsqeusts from WIJ&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="240" y="160" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="530" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-17" value="job1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="130" y="530" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-18" value="job2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="200" y="530" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-19" value="job3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="530" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-20" value="job4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="340" y="530" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-21" value="jobN" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="410" y="530" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-22" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="269" y="450" as="sourcePoint" />
+            <mxPoint x="269" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-24" value="1. filter jobs of JobState_Assigned" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="285" y="460" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-26" value="PoolSchedulingThread::m_toBeScheduledJobs&amp;nbsp;&lt;br&gt;it&#39;s a priority queue based on job&#39;s priority&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="135" y="610" width="330" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-28" value="job1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="180" y="680" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-29" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-90" y="440" as="sourcePoint" />
+            <mxPoint x="60" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-30" value="Start a Schedule Round" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="410" width="170" height="10" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
