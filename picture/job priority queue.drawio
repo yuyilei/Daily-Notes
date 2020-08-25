@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-25T07:05:03.462Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="87btz8TBP7oP41GQ-8nM" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-25T07:46:16.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="8cpZUpvhflV7jRbjfn1j" version="13.6.2" type="github">
   <diagram id="Af-E0rmEuBw-firK7_nA" name="Page-1">
     <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -86,9 +86,6 @@
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-26" value="PoolSchedulingThread::m_toBeScheduledJobs&amp;nbsp;&lt;br&gt;it&#39;s a priority queue based on job&#39;s priority&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="135" y="610" width="330" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-28" value="job1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="180" y="680" width="60" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-29" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-90" y="440" as="sourcePoint" />
@@ -97,6 +94,171 @@
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-30" value="Start a Schedule Round" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-110" y="410" width="170" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-31" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="850" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-32" value="job1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="380" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-33" value="job2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="450" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-34" value="job3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-35" value="job4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="590" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-36" value="jobN" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="660" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-41" value="" style="curved=1;endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="HLEY5dHJLPrmfTfhx0Ch-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="415" y="850" as="sourcePoint" />
+            <mxPoint x="465" y="800" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="445" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-42" value="" style="curved=1;endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="485" y="850" as="sourcePoint" />
+            <mxPoint x="550" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="515" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-44" value="" style="curved=1;endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="555" y="850" as="sourcePoint" />
+            <mxPoint x="620" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="585" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-45" value="" style="curved=1;endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="625" y="850" as="sourcePoint" />
+            <mxPoint x="690" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="655" y="790" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-47" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="269" y="660" as="sourcePoint" />
+            <mxPoint x="269" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-48" value="2. check if there are available TVMs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="670" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-49" value="no running tasks" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="790" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-50" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="730" as="sourcePoint" />
+            <mxPoint x="510" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-51" value="2.b no available TVMs, skip jobs without running tasks" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="541" y="740" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-52" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="510" y="940" as="sourcePoint" />
+            <mxPoint x="510" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-53" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;If there are no jobs left, after a interval time, start a new Schedule Round.&amp;nbsp;&lt;/span&gt;&lt;/div&gt;Otherwise, goto 2.a to schedule these jobs&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="541" y="950" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-54" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-25" y="850" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-55" value="job1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-115" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-56" value="job2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-5" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-57" value="job3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="65" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-58" value="job4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="135" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-59" value="jobN" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="205" y="850" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-60" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="15" y="760" as="sourcePoint" />
+            <mxPoint x="15" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-61" value="2.a have available TVMs, pop the top jobs, then call BeginScheduleOneJobQueue&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="45" y="760" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-63" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-85.5" y="930" as="sourcePoint" />
+            <mxPoint x="-85.5" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-65" value="3. schedule job queues of job1 following the&amp;nbsp; &amp;nbsp;specific order." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-45" y="940" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-66" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-387.5" y="1035" as="sourcePoint" />
+            <mxPoint x="-387.5" y="1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-67" value="3a. still have available TVMs,&amp;nbsp;after job1 schedule finished, put this schedulethread to thread pool again, next time pick up, will call ScheduleNextJob" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-357" y="1030" width="259.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-68" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-72.5" y="1035" as="sourcePoint" />
+            <mxPoint x="-72.5" y="1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-69" value="3b. no available TVMs, but current task is not JM task, try to preempt a running task for JM task, call ScheduleNextJob" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-42" y="1030" width="259.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-70" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="1035" as="sourcePoint" />
+            <mxPoint x="240" y="1095" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-71" value="3c. no available TVMs, current task is JM task, after a interval time, start a new Schedule Round.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270.5" y="1030" width="258.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-72" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="1130" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-73" value="job2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="1130" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-74" value="job3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="1130" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-75" value="job4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="1130" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-76" value="job5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="1130" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-77" value="jobN" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1130" width="60" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
