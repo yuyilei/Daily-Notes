@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-25T07:56:31.062Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="cKQJK8HsCQ07gdiHHzrr" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-25T08:07:15.085Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="UvVt2EhUyAazMgZVS9p8" version="13.6.2" type="github">
   <diagram id="Af-E0rmEuBw-firK7_nA" name="Page-1">
     <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -27,10 +27,10 @@
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-9" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="180" y="160" as="sourcePoint" />
-            <mxPoint x="180" y="300" as="targetPoint" />
+            <mxPoint x="130" y="170" as="sourcePoint" />
+            <mxPoint x="130" y="310" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="180" y="240" />
+              <mxPoint x="130" y="250" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -41,10 +41,10 @@
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-12" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="390" y="160" as="sourcePoint" />
-            <mxPoint x="390" y="300" as="targetPoint" />
+            <mxPoint x="272.5" y="170" as="sourcePoint" />
+            <mxPoint x="272.5" y="310" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="390" y="240" />
+              <mxPoint x="272.5" y="250" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -54,7 +54,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-14" value="Rsqeusts from WIJ&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="240" y="160" width="110" height="20" as="geometry" />
+          <mxGeometry x="145" y="170" width="110" height="20" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="110" y="530" width="380" height="60" as="geometry" />
@@ -274,6 +274,23 @@
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-83" value="pop the top job, if no available TVMs, will skip first.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-472.5" y="1160" width="259.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-84" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="475" y="170" as="sourcePoint" />
+            <mxPoint x="475" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="475" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-85" value="HeartBeat to update task&#39;s status&amp;nbsp;&lt;br&gt;and job&#39;s running task number." style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HLEY5dHJLPrmfTfhx0Ch-84">
+          <mxGeometry x="0.1429" y="17" relative="1" as="geometry">
+            <mxPoint x="-16" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-86" value="HeartBeat Response from TVM&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="180" width="189" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
