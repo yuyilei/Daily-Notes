@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-25T08:14:03.606Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="R1PLQMZCCo0lw4z0EenI" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-25T08:14:57.850Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="c0QsYZqsODZonqH8B8k6" version="13.6.2" type="github">
   <diagram id="Af-E0rmEuBw-firK7_nA" name="Page-1">
     <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -217,63 +217,63 @@
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-66" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint y="1245" as="sourcePoint" />
-            <mxPoint y="1305" as="targetPoint" />
+            <mxPoint x="40" y="1245" as="sourcePoint" />
+            <mxPoint x="40" y="1305" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-67" value="If there no jobs, after a interval time, start a new&amp;nbsp; &amp;nbsp;Schedule Round.&lt;br&gt;Otherwise,&amp;nbsp;Call BeginScheduleOneJobQueue with job2&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="17.5" y="1240" width="259.5" height="70" as="geometry" />
+          <mxGeometry x="57.5" y="1240" width="259.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-68" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-27.5" y="1025" as="sourcePoint" />
-            <mxPoint x="-27.5" y="1085" as="targetPoint" />
+            <mxPoint x="12.5" y="1025" as="sourcePoint" />
+            <mxPoint x="12.5" y="1085" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-69" value="3b. no available TVMs, but current task is not JM task, try to preempt a running task for JM task, call ScheduleNextJob" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="3" y="1020" width="259.5" height="70" as="geometry" />
+          <mxGeometry x="43" y="1020" width="259.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-70" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="285" y="1025" as="sourcePoint" />
-            <mxPoint x="285" y="1085" as="targetPoint" />
+            <mxPoint x="325" y="1025" as="sourcePoint" />
+            <mxPoint x="325" y="1085" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-71" value="3c. no available TVMs, current task is JM task, after a interval time, start a new Schedule Round.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="315.5" y="1020" width="258.5" height="70" as="geometry" />
+          <mxGeometry x="355.5" y="1020" width="258.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-72" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-67.5" y="1150" width="310" height="60" as="geometry" />
+          <mxGeometry x="-27.5" y="1150" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-73" value="job2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-157.5" y="1150" width="60" height="60" as="geometry" />
+          <mxGeometry x="-117.5" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-74" value="job3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-47.5" y="1150" width="60" height="60" as="geometry" />
+          <mxGeometry x="-7.5" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-75" value="job4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="22.5" y="1150" width="60" height="60" as="geometry" />
+          <mxGeometry x="62.5" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-76" value="job5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="92.5" y="1150" width="60" height="60" as="geometry" />
+          <mxGeometry x="132.5" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-77" value="jobN" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="162.5" y="1150" width="60" height="60" as="geometry" />
+          <mxGeometry x="202.5" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-78" value="" style="curved=1;endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-20" y="1150" as="sourcePoint" />
-            <mxPoint x="45" y="1150" as="targetPoint" />
+            <mxPoint x="20" y="1150" as="sourcePoint" />
+            <mxPoint x="85" y="1150" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="10" y="1090" />
+              <mxPoint x="50" y="1090" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-81" value="maybe skip job without running jobs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="55" y="1120" width="207.5" height="20" as="geometry" />
+          <mxGeometry x="95" y="1120" width="207.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-83" value="pop the top job, if no available TVMs, will skip first.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="262.5" y="1150" width="259.5" height="70" as="geometry" />
+          <mxGeometry x="302.5" y="1150" width="259.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-84" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -294,12 +294,12 @@
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-87" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-360" y="1025" as="sourcePoint" />
-            <mxPoint x="-360" y="1085" as="targetPoint" />
+            <mxPoint x="-320" y="1025" as="sourcePoint" />
+            <mxPoint x="-320" y="1085" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-88" value="3a. still have available TVMs, after job1 finished, put the schedule thread to thread pool aagin, next time pick up, will call ScheduleNextJob" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-329.5" y="1020" width="259.5" height="70" as="geometry" />
+          <mxGeometry x="-289.5" y="1020" width="259.5" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
