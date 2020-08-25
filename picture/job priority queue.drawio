@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-25T07:46:16.116Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="8cpZUpvhflV7jRbjfn1j" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-25T07:50:51.163Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="kicNg-tRen5pf3ssMCPP" version="13.6.2" type="github">
   <diagram id="Af-E0rmEuBw-firK7_nA" name="Page-1">
     <mxGraphModel dx="2272" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -243,22 +243,43 @@
           <mxGeometry x="270.5" y="1030" width="258.5" height="70" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-72" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-210" y="1130" width="310" height="60" as="geometry" />
+          <mxGeometry x="-220" y="1150" width="310" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-73" value="job2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-300" y="1130" width="60" height="60" as="geometry" />
+          <mxGeometry x="-310" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-74" value="job3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-190" y="1130" width="60" height="60" as="geometry" />
+          <mxGeometry x="-200" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-75" value="job4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-120" y="1130" width="60" height="60" as="geometry" />
+          <mxGeometry x="-130" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-76" value="job5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="1130" width="60" height="60" as="geometry" />
+          <mxGeometry x="-60" y="1150" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-77" value="jobN" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="20" y="1130" width="60" height="60" as="geometry" />
+          <mxGeometry x="10" y="1150" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-78" value="" style="curved=1;endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-162.5" y="1150" as="sourcePoint" />
+            <mxPoint x="-97.5" y="1150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-132.5" y="1090" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-81" value="skip job without running jobs" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-97.5" y="1120" width="170" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-82" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-280" y="1235" as="sourcePoint" />
+            <mxPoint x="-280" y="1295" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-83" value="4.&amp;nbsp; ScheduleNextJob, pop the top job, if no available TVMs, will skip first.&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-249.5" y="1230" width="259.5" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
