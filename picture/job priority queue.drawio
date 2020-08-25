@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-25T06:56:29.894Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="tj79UP_u9DoZQ7pohTpo" version="13.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-25T06:57:50.045Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36" etag="TMpUiHruk87qxK97m-jD" version="13.6.2" type="github">
   <diagram id="Af-E0rmEuBw-firK7_nA" name="Page-1">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -22,8 +22,8 @@
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-7" value="jobN" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="410" y="320" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-8" value="ReservedPool: m_assignedJobs&amp;nbsp;&lt;br&gt;it&#39;s a priority queue base job priority&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="180" y="400" width="240" height="30" as="geometry" />
+        <mxCell id="HLEY5dHJLPrmfTfhx0Ch-8" value="ReservedPool: m_assignedJobs&amp;nbsp;&lt;br&gt;it&#39;s a map, key is job name, value is job instance&amp;nbsp;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="165" y="400" width="270" height="30" as="geometry" />
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-9" value="" style="shape=flexArrow;endArrow=classic;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -54,7 +54,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="HLEY5dHJLPrmfTfhx0Ch-14" value="Rsqeusts from WIJ&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="245" y="160" width="110" height="20" as="geometry" />
+          <mxGeometry x="240" y="160" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
